@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СВАЛКЕР — тест обновлений</title>
+  <style>
+    html,body {min-height:100%;background:#101713;color:#e7eee7;font:16px/1.6 system-ui,sans-serif}
+    body {display:grid;place-items:center;margin:0;padding:16px;box-sizing:border-box}
+    main {max-width:560px;background:#1c2820;border:1px solid #526452;border-radius:16px;padding:28px}
+    h1 {margin:0 0 6px;letter-spacing:2px} p {margin-top:0}
+    button {background:#b3d77b;color:#101713;font-weight:700;border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+    #result {min-height:25px;color:#c4d2c5}
+    small {color:#9db09f}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>СВАЛКЕР</h1>
+    <p>Тестовый экран проверки обновлений. Это не сборка самой игры.</p>
+    <p>Установленная версия для демонстрации: <b>0.1.0</b></p>
+    <button id="check">Проверить обновления</button>
+    <p id="result" role="status"></p>
+    <small>Для проверки измени значение version на 0.1.1 в version.json.</small>
+  </main>
+  <script src="updater.js"></script>
+  <script>
+    document.querySelector('#check').addEventListener('click', async () => {
+      const out = document.querySelector('#result');
+      out.textContent = 'Проверяем...';
+      try {
+        const info = await SvalkerUpdater.checkForUpdates({
+          manifestUrl: './version.json',
+          currentVersion: '0.1.0'
+        });
+        out.textContent = info.updateAvailable ? 'Найдена новая версия.' : 'Установлена актуальная версия.';
+      } catch(error) {
+        out.textContent = 'Ошибка: ' + error.message;
+      }
+    });
+  </script>
+</body>
+</html>
