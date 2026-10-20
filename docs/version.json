@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "minimumVersion": "0.1.0",
+  "apkUrl": "",
+  "releasePageUrl": "",
+  "notes": [
+    "Первая тестовая версия системы обновлений."
+  ]
+}
