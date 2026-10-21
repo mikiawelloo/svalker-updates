@@ -1,0 +1,17 @@
+--- web/locations-v62.js
++++ web/locations-v62.js
+@@ -103,7 +103,13 @@
+   if(!active())return false;ensure();const v=view();ctx.fillStyle='#182124';ctx.fillRect(-30,-30,960,860);
+   if(v==='yard'||v==='medyard'){
+    const im=WORLD_ART[key('hub')];if(!artReady(key('hub'))){loading('Загрузка поселения…');return true;}const f={x:0,y:0,w:900,h:800,s:900/(im.naturalWidth/2)};drawPanorama74(im,v==='medyard'?1:0,t);
+-   if(!turn)for(const h of houseBoxes()){const [x,y,w,hh]=h.box,cx=f.x+(x+w/2)*f.w,cy=f.y+(y+hh)*f.h-20,width=h.key==='barDoor'?100:180;ctx.save();ctx.fillStyle='#152024db';ctx.fillRect(cx-width/2,cy-20,width,36);ctx.fillStyle='#e0d8b7';ctx.font='23px sans-serif';ctx.textAlign='center';ctx.fillText(h.key==='barDoor'?'Бар':h.key==='medicalDoor72'?'Медпункт':'Торговля',cx,cy+6);ctx.restore();}
++   if(!turn)for(const h of houseBoxes()){const [x,y,w,hh]=h.box,cx=f.x+(x+w/2)*f.w,cy=f.y+(y+hh)*f.h-20,width=h.key==='barDoor'?114:186;
++    // Keep building names above the location title and the on-screen movement buttons.
++    const labelY=Math.max(150,Math.min(550,cy-150));
++    ctx.save();ctx.fillStyle='#10191ce9';ctx.fillRect(cx-width/2,labelY-23,width,38);
++    ctx.strokeStyle='#b6bc9755';ctx.strokeRect(cx-width/2+.5,labelY-22.5,width-1,37);
++    ctx.fillStyle='#e5dec8';ctx.font='22px sans-serif';ctx.textAlign='center';
++    ctx.fillText(h.key==='barDoor'?'Бар':h.key==='medicalDoor72'?'Медпункт':'Торговля',cx,labelY+3);ctx.restore();}
+   }else if(['doctor','scientist'].includes(v)){window.Progression72?.drawMedical(v,t,turn);
+   }else if(['buyer','tech'].includes(v)){if(!window.Refresh77?.trade(v,t,turn))loading('Загрузка помещения…');
+   }else{
