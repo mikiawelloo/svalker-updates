@@ -1,0 +1,10 @@
+--- web/index.html
++++ web/index.html
+@@ -17,6 +17,7 @@
+ <link rel="stylesheet" href="menu-v81.css?v=81">
+ <link rel="stylesheet" href="settlement-v82.css?v=82">
+ <link rel="stylesheet" href="ui-v84.css?v=84">
++<link rel="stylesheet" href="ui-patch-next.css?v=next">
+ <link rel="preload" as="image" href="assets/menu-v81/menu.webp">
+ </head>
+ <body class="front-open81">
