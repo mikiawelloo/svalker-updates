@@ -1,0 +1,80 @@
+name: Publish Svalker browser test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-browser-test.yml"
+      - "docs/browser-test-src/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: svalker-browser-test-publish
+  cancel-in-progress: false
+
+jobs:
+  build-browser-version:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Get published game resources from existing Android release
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --retry-delay 3 \
+            --output /tmp/SVALKER-Alfa-0.84.apk \
+            "https://github.com/mikiawelloo/svalker-updates/releases/download/0.84/SVALKER-Alfa-0.84.apk"
+
+      - name: Create playable browser test with current patches
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          from shutil import copy2
+          import shutil
+
+          target = Path("docs/browser")
+          # Rebuild deterministically from a known APK release.
+          if target.exists():
+              shutil.rmtree(target)
+          target.mkdir(parents=True, exist_ok=True)
+          prefix = "assets/www/"
+          with ZipFile("/tmp/SVALKER-Alfa-0.84.apk") as zf:
+              for entry in zf.infolist():
+                  if entry.is_dir() or not entry.filename.startswith(prefix):
+                      continue
+                  part = Path(entry.filename[len(prefix):])
+                  if not part.parts or part.is_absolute() or ".." in part.parts:
+                      raise RuntimeError("Invalid APK path: " + entry.filename)
+                  output = target / part
+                  output.parent.mkdir(parents=True, exist_ok=True)
+                  with zf.open(entry) as source, output.open("wb") as destination:
+                      shutil.copyfileobj(source, destination)
+          for path in Path("docs/browser-test-src").iterdir():
+              if path.is_file():
+                  copy2(path, target / path.name)
+          assert (target / "index.html").is_file()
+          assert (target / "assets/panorama-v74/0-medical.webp").is_file()
+          print("Browser game files:", sum(p.is_file() for p in target.rglob("*")))
+          PY
+
+      - name: Commit browser build to GitHub Pages source directory
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs/browser
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish browser test with NPC gradient and dialogue cleanup"
+            git push origin HEAD:main
+          fi
