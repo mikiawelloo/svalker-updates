@@ -1,0 +1,18 @@
+[
+  {
+    "name": "emission",
+    "prompt": "Use case: stylized-concept. High quality photorealistic gritty post-apocalyptic exploration game background, detailed realistic anatomy, worn materials, cinematic muted olive and rusty brown palette, believable Eastern European abandoned exclusion-zone setting, atmospheric but legible on phone, NO UI NO text NO logos NO collage, a single complete scene, landscape 1536x1024. First person running through abandoned industrial alley during a terrifying red radioactive emission, crimson cloud wall and strange lightning behind concrete buildings, open rusty basement door with stairs descending and a dim warm light ahead on right, wet ground, debris, no visible player weapon or hands, sense of urgency without motion blur."
+  },
+  {
+    "name": "empty",
+    "prompt": "Use case: stylized-concept. High quality photorealistic gritty post-apocalyptic exploration game background, detailed realistic anatomy, worn materials, cinematic muted olive and rusty brown palette, believable Eastern European abandoned exclusion-zone setting, atmospheric but legible on phone, NO UI NO text NO logos NO collage, a single complete scene, landscape 1536x1024. Interior of a cramped sturdy concrete basement shelter, brick patches, rusty pipe ceiling, heavy steel door and stairs far left, old bench, crates, kerosene lamp on crate, abandoned ragged bag in corner, cold walls warm practical lighting, entirely EMPTY no humans, fully detailed refuge interior."
+  },
+  {
+    "name": "loners",
+    "prompt": "Use case: stylized-concept. High quality photorealistic gritty post-apocalyptic exploration game background, detailed realistic anatomy, worn materials, cinematic muted olive and rusty brown palette, believable Eastern European abandoned exclusion-zone setting, atmospheric but legible on phone, NO UI NO text NO logos NO collage, a single complete scene, landscape 1536x1024. Interior sturdy abandoned concrete basement with exactly THREE distinct adult male loner stalkers in realistic battered olive survival jackets and gear, no masks hiding all faces: LEFT seated on low crate leaning forward hands relaxed, CENTER standing with shoulder against concrete wall arms relaxed looking at viewer, RIGHT crouching looking inside his open backpack checking contents. Lamp on crate casts muted warm light, rusty pipes, bench, heavy steel entrance door left, three characters clearly separated and readable, candid natural poses, accurate hands, no extra people."
+  },
+  {
+    "name": "bandits",
+    "prompt": "Use case: stylized-concept. High quality photorealistic gritty post-apocalyptic exploration game background, detailed realistic anatomy, worn materials, cinematic muted olive and rusty brown palette, believable Eastern European abandoned exclusion-zone setting, atmospheric but legible on phone, NO UI NO text NO logos NO collage, a single complete scene, landscape 1536x1024. Interior sturdy abandoned concrete basement, three adult male rough bandits in battered black and brown hooded street survival jackets, one seated facing viewer with a sardonic smirk holding an enamel mug, one standing by wall in background watchful, one near a crate counting found supplies, menacing informal gathering but no active violence, guns slung safely, kerosene lamp, pipes and heavy steel entrance door, realistic weathered faces and hands, atmospheric warm dim light, all characters clearly readable."
+  }
+]

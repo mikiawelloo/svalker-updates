@@ -1,0 +1,396 @@
+СВАЛКЕР — ПОЛНЫЕ ТИТРЫ
+
+KASHARA / MikiaWello — автор игры, идеи и игровой мир.
+ChatGPT — совместная разработка, программирование и генерация графики.
+
+«Безмолвные стены», «Сломанные системы», «Эпидемический пульс»: Александр Сухов и AI / Zvukogram.com (согласно метаданным предоставленных автором MP3). Оригинальные файлы не изменены. Новые права и лицензии не утверждаются.
+
+
+
+assets/audio/CREDITS.txt
+==================================================
+# Звуки СВАЛКЕР
+
+## Мрачная музыка, ночь и патруль · v9 (актуальная версия)
+
+- `combat-dark-v9.mp3` — German Industrial Metal by Bogart VGM — https://www.facebook.com/BogartVGM/ — CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Источник: https://opengameart.org/content/german-industrial-metal . Изменено: отрезок 32 сек., фильтры, компрессия 3:1, loop crossfade 500 мс, преобразование в моно и нормализация. Авторская инструментальная индустриальная metal-тема с гитарными риффами, барабанами и synth. Боевая тема v8 заменена.
+- `night-v9.mp3` — Lost in a bad place (horror ambience loop), congusbongus — CC0 1.0. Источник: https://opengameart.org/content/lost-in-a-bad-place-horror-ambience-loop . Отрезок хоррор-дрона 32 сек., мягкое зацикливание 1,5 сек., фильтрация/моно/нормализация. Ночью заменяет дневной лес на маршруте, под боевой темой звучит тихо.
+- `patrol-fail-v9.wav` — обработанные Foley Kenney Impact Sounds, https://kenney.nl/assets/impact-sounds — CC0 1.0. Три металлических удара с нисходящей высотой тона и отражениями, 2,2 сек. Сигнал провала звучит ровно один раз при задержании патрулём, днём или при просроченном выключении фонаря.
+- Новая музыка не использует оригинальный саундтрек Doom. Все файлы локальные, mono 44,1 кГц: MP3 128 kbps для музыки и ночи, PCM16 WAV для сигнала. Подробные исходники, лицензии и преобразования: `dark-manifest.json`.
+
+## Отдых и звуковые сцены v8
+
+- `camp-crowd.wav` — murmuring, blaastaal, https://freesound.org/people/blaastaal/sounds/766658/ — CC0 1.0. Публичный HQ preview записи людей, приглушённый фильтрами 100–1700 Гц, мягкий цикл 20 сек.
+- `camp-guitar.wav` — A Small Fire Will Do (Calming Loop), Cal McEachern / Trex0n, https://opengameart.org/content/a-small-fire-will-do-calming-loop — CC0 1.0. Спокойная акустическая гитара, подготовлен цикл 16 сек. Авторы не уточняют живые или семплированные инструменты.
+- `combat-music.mp3` — Battle Theme, Wolfgang_ / Theodore Kerr, https://opengameart.org/content/battle-theme-0 — CC0 1.0. Инструментальная оркестровая тема, подготовлен цикл 44 сек., mono MP3 128 kbps; мягкий переход 1,5 сек.
+- `level-up.wav` — Kenney Interface Sounds, https://kenney.nl/assets/interface-sounds — CC0 1.0. Три копии glass_004.ogg с повышением высоты и коротким отражением, 1,5 сек.; без генерации тонов.
+- Подробные исходные ссылки, лицензии, форматы, измеренные уровни и обработка: `atmosphere-manifest.json`. CC0: https://creativecommons.org/publicdomain/zero/1.0/ .
+
+В дороге звучит локальный Forest Ambience (TinyWorlds); на базе — костёр PagDev, тихая толпа и гитара; на привале — костёр и приглушённый лес; после первого выстрела/неудачного побега начинается боевая тема и тихий лес. Тема заканчивается при победе/уходе. Сцены переключаются с мягкими огибающими, загрузки устаревших циклов отменяются. Выключение звука и скрытие вкладки прекращают все источники; при возвращении включается текущая сцена.
+
+## Дорожные события v7
+
+- `campfire.wav` — Fireplace Sound loop, PagDev, https://opengameart.org/content/fireplace-sound-loop — CC0 1.0. Реальная запись костра, 16-секундный цикл с секундным equal-power crossfade. Треск звучит у встреченного костра и в безопасном привале.
+- `water.wav` — Waterflow Sound, TyberiusGames, https://opengameart.org/content/waterflow-sound — CC0 1.0. Самозаписанная вода, отрезок 3,4 сек. с мягкими краями 40 мс; используется вместе с записанным глотком.
+- Оба файла: mono PCM16 44,1 кГц, пик −3,35 дБFS. CC0: https://creativecommons.org/publicdomain/zero/1.0/ . Полная информация и исходные ссылки: `events-manifest.json`.
+- Привал использует записи ткани и дерева; торговля — монет; патруль — ремня и тяжёлого шага из уже перечисленных ниже наборов. Синтез отсутствует. Огонь останавливается при уходе с привала, скрытии вкладки или отключении звука и возобновляется при возвращении.
+
+В игру встроены локальные звуковые файлы, лицензии CC0 и CC BY 3.0. Звук не требует обращения к сторонним сайтам во время игры. В этой версии нет 8-битного синтеза или осцилляторов. Перечень исходных имён, подготовленных WAV и длительностей — `dist/assets/audio/manifest.json`.
+
+| Набор / автор | Страница источника | Использование |
+| --- | --- | --- |
+| Interface Sounds / Kenney | https://kenney.nl/assets/interface-sounds | Короткий щелчок `click_001.ogg` |
+| Impact Sounds / Kenney | https://kenney.nl/assets/impact-sounds | Шаги по траве и бетону, удары дерева/металла/стекла, банка, удар по персонажу |
+| RPG Audio / Kenney | https://kenney.nl/assets/rpg-audio | Ткань, защёлки, ремень, скрип, страницы, монеты, механические щелчки |
+| Zipper / AntumDeluge | https://opengameart.org/content/zipper | Открытие рюкзака, `zipper-1.wav` |
+| Forest Ambience / TinyWorlds | https://opengameart.org/content/forest-ambience | Фоновый цикл, `Forest_Ambience.mp3` |
+| Gunshot Sounds / Tabasco | https://opengameart.org/content/gunshot-sounds | Фрагмент записи пистолета, `sounds/cz.wav` |
+| Heartbeat sounds / bart | https://opengameart.org/content/heartbeat-sounds | Усталость и появление босса, `heartbeat_slow_0.wav` |
+| Dog Growl / bonebrah | https://opengameart.org/content/dog-growl | Запись рычания собаки, `dog-growl.wav` |
+| Dog barking mono / Brandon Morris (HaelDB) | https://opengameart.org/content/dog-barking-mono | Запись лая при атаке, `dog-bark.wav` |
+| Gun reload sounds / SpringySpringo | https://opengameart.org/content/gun-reload-sounds | Механизм оружия, `reload.wav` |
+| Liquid Bottle Drink Set / qubodup | https://opengameart.org/content/liquid-bottle-drink-set | Открытие бутылки и глоток, `bottle-open-02.flac`, `swallow-01.flac` |
+
+Оригинальные лицензии Kenney и Tabasco сохранены рядом со звуками. Страницы отдельных звуков OpenGameArt указывают CC0: https://creativecommons.org/publicdomain/zero/1.0/ .
+
+## Подготовка и воспроизведение
+
+37 эффектов преобразованы в моно WAV PCM, 16 бит, 44,1 кГц. Убрана ведущая тишина, длительность ограничена, пиковая громкость приведена максимум к −3 дБFS, добавлен короткий мягкий выход. Лесной MP3 сохранён целиком как бесшовный цикл автора. Новые звуки — рычание, лай, механизм оружия. Клин и неудача улучшения используют локальные механические/ударные записи.
+
+Файлы предзагружаются, AudioContext запускается первым касанием/кликом или Enter/Space. Буферы декодируются один раз. Громкость эффектов различается, используется компрессор на общем выходе. Шаги имеют по три варианта на поверхность и не повторяют предыдущий вариант подряд. Небольшие изменения громкости и скорости уменьшают ощущение повторов. Короткие звуки не накапливаются при быстрых нажатиях; устаревшие и загруженные после выключения звука эффекты отменяются. При скрытии вкладки и выключении звука источники останавливаются.
+
+Проверено: декодируемые WAV-файлы, существование путей; буферное воспроизведение и кэш, жест запуска, события интерфейса, варианты шагов, выключение/возврат звука, отмена ожидающих эффектов, скрытая вкладка и неуспешная загрузка. Аудио в реальном мобильном браузере в этой среде не прослушивалось.
+
+## Рассвет и ночной вой
+
+- Rooster Crowing — Mike Koenig, https://soundbible.com/1134-Rooster-Crowing.html — CC BY 3.0. Источник: `Rooster Crowing-SoundBible.com-43612401.mp3`, подготовлен как `rooster.wav`; звучит на рассвете.
+- Wolf Howling Yipping — Daniel Simon, https://soundbible.com/2132-Wolf-Howling-Yipping.html — CC BY 3.0. Источник: `cartoon-wolf-daniel_simon.mp3`, подготовлен как `wolves.wav`; звучит в начале ночи и через 60 и 120 секунд ночного времени.
+- Лицензия: https://creativecommons.org/licenses/by/3.0/ . Для обоих изменены формат/частота/число каналов, убрана начальная тишина, ограничен пик, добавлены мягкие края. Записи воспроизводятся из локальных файлов. Авторство доступно по ссылке «Звуки и авторы» внизу базы; на вылазке подвал скрыт.
+
+Новые события проверены вместе с циклом дня, выключением звука и скрытой вкладкой.
+
+
+V45 Zombie voices: ArcadeParty — Zombie / Skeleton / Monster Voice Effects
+https://opengameart.org/content/zombie-skeleton-monster-voice-effects
+License: CC0 (https://creativecommons.org/publicdomain/zero/1.0/).
+zombie-roar.wav = zombieYell10.wav; zombie-death.wav = zombieDeath3.wav.
+zombie-attack.wav combines zombieYell1.wav with the existing licensed hit.wav; level adjusted.
+New snore.mp3 supplied by the game author; uploaded file retained unchanged.
+
+
+NEW EVENTS v47 (2026-10-17)
+Eight locally hosted one-shot soundscapes from CC0 sources. Full authors, license links and processing: ../events-v47/audio/CREDITS.md
+Kenney RPG Audio: https://kenney.nl/assets/rpg-audio
+Kenney Impact Sounds: https://kenney.nl/assets/impact-sounds
+Ove Melaa Rain: https://opengameart.org/content/rain-ambient-not-loopable-2-versions-available
+Luke.RUSTLTD wind1: https://opengameart.org/content/wind1
+YCbCr Generator: https://opengameart.org/content/generator-loop
+zeroisnotnull Crow caw: https://opengameart.org/content/crow-caw
+AntumDeluge Zipper: https://opengameart.org/content/zipper
+colorsCrimsonTears Whispers: https://freesound.org/people/colorsCrimsonTears/sounds/545696/
+License for all new sources: https://creativecommons.org/publicdomain/zero/1.0/
+
+
+
+assets/audio-v68/CREDITS.md
+==================================================
+# v68 audio
+
+- grass-source.mp3 / grass.mp3: Dry Grass Rustle.wav by TheSupremeMuffinPooter, CC0. https://freesound.org/people/TheSupremeMuffinPooter/sounds/525268/ . Public HQ preview https://cdn.freesound.org/previews/525/525268_2456299-hq.mp3 . Excerpt, volume and edge fades only.
+- metal-source.mp3 / metal.mp3: Metal Scrape by magnuswaker, CC0. https://freesound.org/people/magnuswaker/sounds/530075/ . Public HQ preview https://cdn.freesound.org/previews/530/530075_11537497-hq.mp3 . Volume and edge fades only.
+- bag.mp3: Zipper by AntumDeluge, CC0. https://opengameart.org/content/zipper . Source zipper-1.wav retained in v47 provenance. Volume and edge fades only.
+- travel.mp3: user-supplied realm-of-shadows_89374.mp3, complete ~120-second track. No external license asserted. Re-encoded without metadata, soft edges, volume reduced.
+
+No synthetic layers added. Cart and tracks no longer make arrival sounds. Searching cart bags uses zipper; examining/following marks uses brief grass rustle; disarming wire uses one metal scrape. Mutant combat uses existing animal voice, not the tracks cue. Travel music replaces all location ambient mixes; crowd removed from base. Base radio and shelter/boss audio retained.
+
+
+
+assets/echo-user-v1/CREDITS.md
+==================================================
+# User-supplied Radio Echo audio
+
+All seven MP3 files were supplied by the user for this game on 2026-10-16 with explicit event assignments. Original MP3 bytes preserved; no attribution or third-party license has been inferred. The user-provided filenames, role mapping, metadata and SHA-256 hashes are retained in manifest.json.
+
+1(1).mp3 → background-main.mp3; 2.mp3 → background-2.mp3; 2.1.mp3 → background-2-1.mp3; 2.2.mp3 → background-2-2.mp3; 3.mp3 → windup.mp3; 4.mp3 → attack.mp3; 5.mp3 → death.mp3.
+
+Playback gains are set in the game mixer, not baked into the files. Windup, impact and death play at their original rate/pitch. These seven files replace prior boss background/voice/attack audio. The separate existing Kenney glass cue remains active for spotlights.
+
+
+
+assets/echo-v1/CREDITS.md
+==================================================
+# Radio Echo original assets
+
+tentacle.png — built-in ImageGen creation using this project's Radio Echo tower as style reference. Original RGBA pixels retained. Full prompt in ECHO-ATTACK.md at repository root.
+
+All nine echo-*.wav files are original deterministic offline sound design created for this game. Reproducible generator: tools/make-echo-audio.py. No external recordings or real radio transmissions. The fictional English broadcast is synthesized locally using the installed libflite SLT voice and processed with band-pass filtering, saturation, dropout and noise. libflite: Carnegie Mellon University, permissive BSD-style license; https://github.com/festvox/flite . Remaining sounds use noise, harmonics, impulses and resonators. Files use 24 kHz mono 16-bit PCM.
+
+
+
+assets/echo-v2/CREDITS.md
+==================================================
+# Radio Echo v2 — recording-based sound design
+
+`pistol-ads.png`: new original built-in ImageGen artwork. User photograph supplied the straight rear sight perspective; the project's gun-v2.png supplied gloves, clothing and materials. Original RGBA pixels retained. Full generation prompt: ECHO-ADS.md in repository root.
+
+Nine stereo PCM16 44.1 kHz WAV derivatives, prepared by tools/make-echo-audio-v2.py from the following already bundled recordings. No new third-party recordings downloaded. Treatments: filtering, time/rate changes, mixing, short stereo reflections, fades and gain control. No oscillator/bitcrusher/quantized tone synthesis.
+
+| Source | Author and license | Used for |
+| --- | --- | --- |
+| Forest Ambience, forest.mp3 | TinyWorlds, CC0; https://opengameart.org/content/forest-ambience | Wind under the tower |
+| Impact Sounds; heavy, glass, wood, hit | Kenney, CC0; https://kenney.nl/assets/impact-sounds | Steel/cloth/impact, cracking and falling glass |
+| RPG Audio; creak, metal-click, cloth | Kenney, CC0; https://kenney.nl/assets/rpg-audio | Cable creaks and mechanical movement |
+| Gun reload sounds; reload.wav | SpringySpringo, CC0; https://opengameart.org/content/gun-reload-sounds | Attack windup mechanism |
+| Wolf Howling Yipping; wolves.wav | Daniel Simon, CC BY 3.0; https://soundbible.com/2132-Wolf-Howling-Yipping.html ; https://creativecommons.org/licenses/by/3.0/ | echo-howl.wav: excerpt, slower playback, band-pass, mixed creaking metal, stereo reflections |
+| murmuring; camp-crowd.wav | blaastaal, CC0; https://freesound.org/people/blaastaal/sounds/766658/ | echo-broadcast.wav: indistinct voices, narrow radio band, reception fluctuations |
+| Fireplace Sound loop; campfire.wav | PagDev, CC0; https://opengameart.org/content/fireplace-sound-loop | Analog-like static and crackles |
+
+Prior synthesis-only echo-v1 WAV files remain archived and are not loaded by the game. Tentacle artwork in echo-v1 remains active.
+
+
+
+assets/echo-v3/CREDITS.md
+==================================================
+# Radio Echo v3 — uncluttered audio
+
+Active set: mono PCM16 44.1 kHz. Reproduce with tools/make-echo-audio-v3.py.
+
+- echo-carrier.wav: quiet steady band-limited aperiodic radio noise, original procedural sound design. No oscillating tone, pulse modulation, music, speech, animal, footsteps or prerecorded mixtures.
+- echo-static.wav: 0.22-second faded excerpt of that radio noise, one cue at regeneration start.
+- echo-windup.wav: single existing creak.wav recording, Kenney RPG Audio, CC0, https://kenney.nl/assets/rpg-audio . Gain normalization and short fades.
+- echo-attack.wav: single existing heavy.wav recording, Kenney Impact Sounds, CC0, https://kenney.nl/assets/impact-sounds . Gain normalization and short fades.
+- echo-glass.wav: single existing glass-2.wav recording, Kenney Impact Sounds, CC0, https://kenney.nl/assets/impact-sounds . Gain normalization and short fades.
+
+Kenney notices and source manifest remain in assets/audio/. No new third-party downloads. All foreground files are shorter than 0.5 seconds. The engine plays one radio loop, one exclusive boss-effects channel and one exclusive glass channel. Old multi-source echo-v1/v2 WAV files are archived and not loaded. Their imagery remains independently active.
+
+
+
+assets/enemies-v24/audio/CREDITS.md
+==================================================
+# Original enemy audio — СВАЛКЕР
+
+Created for this project with the included deterministic `generate.py` using NumPy,
+SciPy and PCM WAV encoding. No sampled audio, third-party sound recording,
+copyrighted character voice, real-person imitation, or external speech service.
+
+The sounds are original procedural vocal effects, not recordings of a human actor.
+
+| File | Description | Duration |
+|---|---|---:|
+| rat-voice.wav | Three irregular high squeaks blend into a rough low growl/howl | 3.80 s |
+| rat-attack.wav | Short sharp falling squeak and aggressive growl | 0.80 s |
+| rat-down.wav | Dying squeak followed by falling rasp | 1.01 s |
+| bum-babble-1.wav | Slurred nasal vowel fragments, lip/stop consonants, rolling rasp, breath | 3.05 s |
+| bum-babble-2.wav | Alternate irregular unintelligible vowel/consonant muttering | 3.26 s |
+| bum-attack.wav | Brief open-vowel effort grunt | 0.68 s |
+| bum-down.wav | Falling low defeat grunt and fading exhale | 1.15 s |
+
+All files: 22050 Hz, mono PCM16, normalized maximum amplitude 0.65, fades at both
+ends. The babbling contains no meaningful words or insult. Pitch droop, irregular
+glottal excitation, vocal fry, formant resonances and fricative/stop/nasal segments
+make the human sound voice-like rather than a UI beep or tune.
+
+`validation.json` was produced by reopening every written WAV and inspecting its
+header, decoded sample peak, finite RMS, duration and zero-valued endpoints.
+`waveform-review.png` shows waveform and spectrogram inspection; it is a QA
+artifact and need not be shipped with the game. Actual device playback was not
+available in this environment.
+
+These assets may be copied into the user's game and distributed with it.
+
+
+
+assets/events-v47/audio/CREDITS.md
+==================================================
+# СВАЛКЕР: звуки новых событий v47
+
+Все восемь звуков подготовлены из доступных библиотечных записей и эффектов. Лицензия каждого использованного источника — CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+
+Источник проверен 17 октября 2026 года. Все файлы локальные MP3, mono 44,1 кГц / 128 kbps; обработка: монтаж слоёв, мягкие края и нормализация до целевых −19 LUFS / −3 dBTP. Это короткие однократные звуковые сцены, а не бесшовные циклы. Подробности, хеши и измеренные пики — в manifest.json.
+
+## Исходники
+
+### RPG Audio — Kenney Vleugels / Kenney
+- Страница: https://kenney.nl/assets/rpg-audio
+- Загрузка: https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+
+### Impact Sounds — Kenney
+- Страница: https://kenney.nl/assets/impact-sounds
+- Загрузка: https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+
+### Rain (Ambient, Not Loopable) 2 Versions Available. — OveMelaa / Ove Melaa
+- Страница: https://opengameart.org/content/rain-ambient-not-loopable-2-versions-available
+- Загрузка: https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Rainy%20%28NOT%20loopable%29.ogg
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+
+### wind1 — Luke.RUSTLTD
+- Страница: https://opengameart.org/content/wind1
+- Загрузка: https://opengameart.org/sites/default/files/wind1.wav
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+- The source author describes these as synthesized wind sounds created using PureData.
+
+### Generator (loop) — YCbCr
+- Страница: https://opengameart.org/content/generator-loop
+- Загрузка: https://opengameart.org/sites/default/files/loop_generator_1.mp3
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+
+### Crow caw — zeroisnotnull
+- Страница: https://opengameart.org/content/crow-caw
+- Загрузка: https://opengameart.org/sites/default/files/crow_caw.wav
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+- Field recording made near Cairo according to author.
+
+### Zipper — AntumDeluge
+- Страница: https://opengameart.org/content/zipper
+- Загрузка: https://opengameart.org/sites/default/files/zipper-1.wav
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+
+### Whispers — colorsCrimsonTears
+- Страница: https://freesound.org/people/colorsCrimsonTears/sounds/545696/
+- Загрузка: https://cdn.freesound.org/previews/545/545696_11785387-hq.mp3
+- Лицензия: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+- Public HQ MP3 preview; author describes recording and processing a toaster oven, producing whisper-like sound design; no intelligible speech.
+
+## Использование и обработка
+
+**cart.mp3** (5.54 сек.) — Cart creaks, restrained metal rattle and sack cloth; staggered layers, slight slowing, no loop.
+Исходные файлы: `rpg/Audio/creak2.ogg`, `impact/Audio/impactMetal_medium_002.ogg`, `rpg/Audio/creak1.ogg`, `rpg/Audio/cloth3.ogg`, `rpg/Audio/creak3.ogg`.
+
+**rain.mp3** (10.03 сек.) — Ten-second excerpt of rain, filtering, fades; intended as a one-shot arrival cue, not a seamless loop.
+Исходные файлы: `rain.ogg`.
+
+**lift.mp3** (6.03 сек.) — Industrial motor start, stressed mechanism and ending latch/metal clunk; no loop.
+Исходные файлы: `generator.mp3`, `rpg/Audio/metalLatch.ogg`, `rpg/Audio/creak3.ogg`, `impact/Audio/impactMetal_medium_001.ogg`, `rpg/Audio/metalLatch.ogg`.
+
+**reeds.mp3** (9.04 сек.) — Library wind excerpt, resonant EQ and short echoes to suggest anomalous singing reeds; no added synthesized tones.
+Исходные файлы: `wind1.wav`.
+
+**backpack.mp3** (3.24 сек.) — Cloth handling, zipper and leather movement; staggered natural foley.
+Исходные файлы: `rpg/Audio/cloth2.ogg`, `zipper.wav`, `rpg/Audio/handleSmallLeather2.ogg`, `rpg/Audio/cloth1.ogg`.
+
+**guide.mp3** (4.23 сек.) — Six footsteps on grass recede, with restrained equipment cloth; no loop.
+Исходные файлы: `impact/Audio/footstep_grass_000.ogg`, `impact/Audio/footstep_grass_001.ogg`, `impact/Audio/footstep_grass_002.ogg`, `impact/Audio/footstep_grass_003.ogg`, `rpg/Audio/clothBelt2.ogg`, `impact/Audio/footstep_grass_000.ogg`, `impact/Audio/footstep_grass_001.ogg`.
+
+**caravan.mp3** (6.03 сек.) — Recorded crow over broken wood/creaks and scavenged cloth; layered arrival cue.
+Исходные файлы: `crow.wav`, `impact/Audio/impactWood_medium_000.ogg`, `rpg/Audio/creak2.ogg`, `impact/Audio/impactWood_light_002.ogg`, `rpg/Audio/cloth4.ogg`.
+
+**marks.mp3** (8.05 сек.) — Freesound whisper-like processed texture over quiet wind; no words, excerpt/EQ/short echo, no loop.
+Исходные файлы: `whispers-hq.mp3`, `wind1.wav`.
+
+Авторство CC0 приводится добровольно. Новые синусоидальные тоны, генеративная музыка и синтезированная речь не использовались; сам библиотечный источник wind1 является синтезированным ветром, а Whispers — авторским обработанным бытовым фоли.
+
+
+
+assets/locations-v64/audio/CREDITS.md
+==================================================
+# СВАЛКЕР — звуковые фоны локаций v64
+
+Подготовлено 19 октября 2026 года. Пять локальных фоновых петель и один отдельный эффект шага. Игровой код этим заданием не изменялся.
+
+## Файлы и воспроизведение
+
+Папка: `dist/assets/locations-v64/audio/`.
+
+| Файл | Локация | Содержание | Режим |
+| --- | --- | --- | --- |
+| `0.mp3` | Тихая гавань | Мягкий лесной фон, тихий ветер | Петля, 32 с |
+| `1.mp3` | Старый завод | Индустриальный ветер, редкие скрипы и приглушённый металлический резонанс | Петля, 32 с |
+| `2.mp3` | Стеклянные болота | Записанные мухи, тихая вода; шагов в фоне нет | Петля, 32 с |
+| `3.mp3` | Затихший радиоузел | Записанные помехи рации, ветер и два тихих коротких фрагмента диктора | Петля, 32 с |
+| `4.mp3` | Забытый район | Глухой сквозняк с короткими отражениями в пустых зданиях | Петля, 32 с |
+| `mud-step.wav` | Шаг на болотах | Один чавкающий шаг, исходник `mud_07.ogg` | Однократно, 0,604 с |
+
+Пять MP3: mono, 32 кГц, 96 kbps, по 384 957 байт. Общий размер петель — 1 924 785 байт; вместе с шагом — 1 978 145 байт. WAV шага: mono PCM16 / 44,1 кГц, 53 360 байт.
+
+Фоны уже сведены тихо: RMS примерно −28…−31 dBFS, пики не выше −10,8 dBFS после MP3. Для первого сравнения подойдёт дополнительный коэффициент воспроизведения 0,3–0,4; окончательный баланс зависит от общего микшера игры. Рекомендуется плавная смена локаций за 400–700 мс. Эффект шага запускается только при движении, отдельно от ambient2; его пик −6 dBFS.
+
+## Источники и лицензии
+
+Все использованные источники имеют CC0 1.0: <https://creativecommons.org/publicdomain/zero/1.0/>. Авторство указано добровольно; лицензии проверены по страницам источников 19 октября 2026 года. Новые Freesound-записи скачаны как доступные публичные HQ MP3 previews.
+
+| Источник | Автор | Где используется | Примечание |
+| --- | --- | --- | --- |
+| [Forest Ambience](https://opengameart.org/content/forest-ambience) | TinyWorlds | 0 | Уже включённый в проект `assets/audio/forest.mp3`; библиотечный ambient |
+| [wind1](https://opengameart.org/content/wind1) | Luke.RUSTLTD | 0, 1, 3, 4 | Библиотечный синтезированный ветер; автор указывает PureData. Это не полевая запись |
+| [RPG Audio](https://kenney.nl/assets/rpg-audio) | Kenney Vleugels / Kenney | 1 | `creak1.ogg`, `creak2.ogg`, `creak3.ogg` |
+| [Impact Sounds](https://kenney.nl/assets/impact-sounds) | Kenney | 1 | `impactMetal_medium_002.ogg`, `impactMetal_medium_004.ogg` |
+| [Flies.wav](https://freesound.org/people/PuzzleAudio/sounds/440809/) | PuzzleAudio | 2 | Настоящая запись мух, автор указывает Rode NT3 / Zoom H6 |
+| [Waterflow Sound](https://opengameart.org/content/waterflow-sound) | TyberiusGames | 2 | Уже лицензированный `assets/audio/water.wav`; самозаписанная вода |
+| [Radio Static](https://freesound.org/people/JovianSounds/sounds/524204/) | JovianSounds | 3 | Запись фоновых помех рации |
+| [Evening Radio Sign-Off](https://freesound.org/people/crashoverride6/sounds/145093/) | crashoverride6 | 3 | Автор записал собственный голос для театрального проекта. Взяты короткие ранние фрагменты английской дикторской речи, сильно приглушены и отфильтрованы. Выбрано нейтральное начало сообщения об окончании эфира (отрезки 0,2–3,8 с и 1,0–3,5 с исходника), без завершающей религиозной фразы. Это авторская театральная запись, без рекламы или ругани; TTS не использовался |
+| [25 CC0 mud sfx](https://opengameart.org/content/25-cc0-mud-sfx) | rubberduck | `mud-step.wav` | Запись движений в грязи, `mud_07.ogg` |
+
+Прямые ссылки на новые загруженные материалы:
+
+- Мухи: <https://cdn.freesound.org/previews/440/440809_8523759-hq.mp3>
+- Помехи: <https://cdn.freesound.org/previews/524/524204_9561949-hq.mp3>
+- Диктор: <https://cdn.freesound.org/previews/145/145093_1274078-hq.mp3>
+- Грязь: <https://opengameart.org/sites/default/files/25-CC0-mud-sfx.zip>
+
+Переиспользованные оригиналы:
+
+- Ветер: <https://opengameart.org/sites/default/files/wind1.wav>
+- Kenney RPG: <https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip>
+- Kenney Impact: <https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip>
+- Лес и вода: используемые проектом файлы и сведения об их первоначальной подготовке сохранены в `dist/assets/audio/CREDITS.txt`, `events-manifest.json`.
+
+## Обработка
+
+Монтаж в mono с помощью FFmpeg и NumPy. Использованы отрезки библиотечных источников, частотная фильтрация, умеренное изменение скорости скрипов, короткие отражения металла/городского ветра и сведение уровней. Новые голоса или музыкальные мелодии не генерировались.
+
+Все пять финальных фонов получены из 34-секундного материала с двухсекундным круговым equal-power crossfade; результат — 32 секунды. На самом краю добавлены технические 5-миллисекундные огибающие, устраняющие щелчок при различиях обработки MP3 padding. У коротких повторяемых источников заранее сглажен внутренний стык. MP3 записаны с Xing/LAME gapless-метаданными. Отдельный шаг отфильтрован на 65–4000 Гц, приведён к пику −6 dBFS, края сглажены за 15 мс.
+
+## Проверка
+
+Все шесть файлов повторно декодированы FFmpeg. Для каждого MP3 подтверждены 32,000 секунды декодированного сигнала, mono и отсутствие клиппинга. Измерены уровни и разница между последним и первым декодированным отсчётом; максимальный абсолютный скачок на стыке — менее 0,0008 полной шкалы. Это техническая проверка файлов, без прослушивания в мобильном браузере.
+
+Хеши SHA256, уровни и остальные измерения: `dist/assets/locations-v64/audio/manifest.json`.
+
+
+
+assets/rare-v23/audio/CREDITS.md
+==================================================
+# Rare event audio — SVALKER
+
+All 12 sound assets in this directory are original procedural audio generated for this game by `generate.py`. No third-party recordings, music, voice clips, external models, or sampled copyrighted works are used. Nonverbal breathing and radio fragments are synthetic sound design; the radio contains no intelligible spoken content.
+
+Recreate: `python generate.py` (Python 3, numpy, scipy). Fixed PRNG seed makes the output reproducible. Output: mono, 22,050 Hz, signed 16-bit PCM WAV; all peaks 0.65 full scale, with attack/release ramps. Validation is saved in `validation.json`.
+
+| Asset | Duration | Intended use |
+| --- | ---: | --- |
+| wounded.wav | 3.4 s | Labored nonverbal breath and clothing rustle |
+| tripwire.wav | 1.8 s | Taut wire pluck and metallic release |
+| radio-static.wav | 3.8 s | Broken noisy transmission |
+| emission-siren.wav | 4.4 s | Distant warning siren |
+| anomaly-fog.wav | 6 s | Eerie wind bed, loopable with soft edge fades |
+| rival-loot.wav | 2.5 s | Crate/cloth rustle and equipment clink |
+| night-shadow.wav | 3.6 s | Approaching muffled steps and low uneasy tail |
+| mutant-tracks.wav | 3.4 s | Branch snaps and distant animal growl |
+| mini-success.wav | 1.15 s | Small mechanical release, airy positive cue |
+| mini-fail.wav | 1.5 s | Dull low impact and scrape |
+| radio-loop.wav | 10 s | Quiet continuous radio static bed |
+| emission-rumble.wav | 10 s | Low rolling pressure/rumble bed |
+
+Suggested engine gains: siren 0.18–0.25, continuous layers 0.08–0.14, short cues 0.25–0.4. Respect existing mute, visibility and scene lifecycle handling. Fade loop layers in/out through the engine gain node; existing limiter can remain enabled.
+
+
+
+assets/weather-v71/CREDITS.md
+==================================================
+# Weather and Forgotten District audio v71
+
+All music, rain/thunder recordings and video footage below were uploaded by the user for this game. No external license or ownership is asserted.
+
+- base.mp3: kradushchayasya-ten-2-70a31e(1).mp3, full ~158.7 s; Forgotten District base only.
+- travel.mp3: shadows-of-dread_89386(2).mp3, full ~112.1 s; Forgotten District travel, continuing quietly in encounters.
+- rain.mp3: rain-ringing-close-active.mp3, full ~9.6 s, looping while raining.
+- thunder.mp3: thunder-single-hit.mp3, full ~8.4 s, single playback after a lightning flash.
+- rain.webm: vecteezy_heavy-rain-falling-effect-and-splash-loopable-rainy-season_66268733.mp4. Source greenscreen keyed to alpha, residual green removed; rain highlights neutralized. Video-only VP9 alpha, 640x360, 24 fps. Entire footage retained.
+- drops.webm: vecteezy_slow-motion-of-water-splashing-with-drops-on-green-screen_58338320.mp4. Source greenscreen keyed to alpha and green spill removed. Video-only VP9 alpha, 640x360, 24 fps. Entire footage retained.
+- lightning.png: generated using built-in imagegen; genuine alpha. Prompt: PROMPT.md.
+
+Audio: source audio stream only (embedded cover images/metadata stripped), MP3 128 kbps/32 kHz stereo, volume reduction and soft edges; no generated audio added.
+
+Weather is cosmetic, scheduled independently of encounters and rewards. Rain is visible on outdoor bases and roads; indoor rooms and shelters hide overlays and muffle the sound. Fog is visible only in outdoor travel. Overlays have pointer-events:none. Hidden tabs pause footage and cancel pending thunder. The existing game sound toggle controls rain and thunder through AudioFX.

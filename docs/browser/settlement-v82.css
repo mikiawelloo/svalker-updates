@@ -1,0 +1,29 @@
+/* A generated foreground fills the first settlement through the bottom safe area. */
+.settlement-ground82{position:absolute;left:0;width:100%;display:block;z-index:0;pointer-events:none}
+.game.settlement-extended82{min-height:100dvh;isolation:isolate}
+.settlement-extended82>.status,.settlement-extended82>.scene-section,.settlement-extended82>.vitals,.settlement-extended82>.action-panel{position:relative;z-index:1}
+.settlement-extended82 .scene-shade{background:none}
+.settlement-extended82>.vitals{padding-top:12px;background:linear-gradient(#12202300,#12202344 55%,#12202300)}
+.settlement-extended82 .meter-face{border-radius:50%;background:radial-gradient(circle,#152024e0 45%,#15202480 66%,transparent 71%)}
+.settlement-extended82 .meter-caption{padding:3px 6px;border-radius:5px;background:#152024d9;color:#e0dfcc;text-shadow:0 1px 2px #000}
+.settlement-extended82>.action-panel{padding-bottom:max(24px,env(safe-area-inset-bottom));background:transparent}
+/* Both utility icons receive their real width; balance artwork stays centered. */
+.status,.on-expedition .status{grid-template-columns:32px minmax(44px,1fr) auto auto;gap:4px;padding:7px;margin-inline:4px}
+.status .level{width:32px;height:32px;min-width:32px}
+.status .money{height:32px;min-height:32px;max-width:88px;justify-self:stretch;align-items:center;justify-content:center;padding:2px 4px;background-image:linear-gradient(90deg,#1120189c,#112018bf),url('assets/hud-v35-money.svg?v=82');background-position:center center;background-size:auto,76px 32px;line-height:1}
+.top-actions{gap:3px}
+.top-actions button{width:34px;min-width:34px;height:38px;min-height:38px;padding:6px}
+.top-actions .ui-icon{width:22px;height:22px}
+.front-game-buttons81{gap:3px;margin-left:0}
+.front-game-buttons81 .front-icon81{width:30px;min-width:30px;height:38px;min-height:38px;padding:5px;flex:none}
+.front-game-buttons81 .front-icon81 svg{width:22px;height:22px}
+@media(max-width:360px){
+ .status,.on-expedition .status{grid-template-columns:28px minmax(36px,1fr) auto auto;gap:3px;padding:5px;margin-inline:2px}
+ .status .level{width:28px;height:28px;min-width:28px}
+ .top-actions{gap:2px}
+ .top-actions button{width:30px;min-width:30px;height:36px;min-height:36px;padding:5px}
+ .front-game-buttons81{gap:2px}
+ .front-game-buttons81 .front-icon81{width:27px;min-width:27px;height:36px;min-height:36px;padding:4px}
+ .status .money{background-size:auto,68px 30px;padding:1px 2px}
+ .settlement-extended82 .meter-caption{font-size:10px;padding-inline:4px}
+}

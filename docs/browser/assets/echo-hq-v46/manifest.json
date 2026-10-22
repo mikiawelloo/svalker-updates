@@ -1,0 +1,125 @@
+{
+  "version": 46,
+  "sprite_count": 10,
+  "icon_count": 5,
+  "files": [
+    {
+      "file": "alcohol-effects.png",
+      "bytes": 20489,
+      "sha256": "118410bcf8f3c010e3e025fa96879fab61439c8b4cba23333b838dc9dac70c9e",
+      "width": 800,
+      "height": 176,
+      "mode": "RGBA"
+    },
+    {
+      "file": "alcohol-effects.svg",
+      "bytes": 2054,
+      "sha256": "c1f49fad35bd9c7c9b3c592ea414e8f6789c4309bad027d18892a2ba53042616"
+    },
+    {
+      "file": "alcohol1.svg",
+      "bytes": 249,
+      "sha256": "47a03a099f391da5716d0a28813c50af972138211165fff7c91637331522993b"
+    },
+    {
+      "file": "alcohol2.svg",
+      "bytes": 282,
+      "sha256": "ffff1c8aefce6c94abdc9395488daa92268192c3ea77399b7f1b7d56ae3aee2d"
+    },
+    {
+      "file": "alcohol3.svg",
+      "bytes": 393,
+      "sha256": "39e6ccf25574f10c8b0a01ca75219014601c1b37d8c1e6635afcacf84d6b8afb"
+    },
+    {
+      "file": "alcohol4.svg",
+      "bytes": 329,
+      "sha256": "65cd224ca59f3007f427462e007b67adad8dbfcc3f3ddb642a28f845f7bbd729"
+    },
+    {
+      "file": "alcohol5.svg",
+      "bytes": 310,
+      "sha256": "cd5db5fa36332aee8574398985cc1455773119a653cff37e0556b410f67f3439"
+    },
+    {
+      "file": "radio-echo-alive.png",
+      "bytes": 2454887,
+      "sha256": "5b2e80cda024f3c6dc816fa052fff8e729f7801c6b63f4a8c625daa5404d8443",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "radio-echo-dead.png",
+      "bytes": 2417239,
+      "sha256": "ec03ea469c68d71713119cd1fe4f233419b57ac228fbcecc80d7422176f248d1",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie1-dead.png",
+      "bytes": 2281424,
+      "sha256": "cf4be055e7c39d24f5b29c1e8885aaa5fe4b0450bb92874f5d5591790417ee49",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie1-idle.png",
+      "bytes": 2413770,
+      "sha256": "6ad4fdfed5005f9a96b90eeace2c13548532fd75eec6e091e1b739bb7173bcf6",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie1-raised.png",
+      "bytes": 2401151,
+      "sha256": "3f4bac28afd32522ecb59ef9c5707454160bfcf3049a0d38a09073cd00ef9210",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie1-strike.png",
+      "bytes": 2679522,
+      "sha256": "a4f8289ce0ee5bcf320a91913db059c4fb1b6f3bd9ba5d97a98c7578ee769f81",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie2-dead.png",
+      "bytes": 2562630,
+      "sha256": "a61caefc0dc0a45f1c991391cb077c91403298ae5a0239caf0b43762dc8c93d4",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie2-idle.png",
+      "bytes": 2863994,
+      "sha256": "43d1add9447fc467aab49e1845752132434bb1240cd9fd1812951114db49f91a",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie2-raised.png",
+      "bytes": 2632595,
+      "sha256": "5eb95e56c29fa3fd9e9301032049e0f329e8e5318284635125e8cccfe108323d",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "file": "zombie2-strike.png",
+      "bytes": 2769656,
+      "sha256": "97874a1d6fb4d62ec79effa4c3be3800b5f1521d83e727f23803d7a42af45cb9",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    }
+  ]
+}

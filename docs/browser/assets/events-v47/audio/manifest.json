@@ -1,0 +1,241 @@
+{
+  "version": 47,
+  "license": "CC0 1.0",
+  "sources": {
+    "rpg": {
+      "title": "RPG Audio",
+      "author": "Kenney Vleugels / Kenney",
+      "url": "https://kenney.nl/assets/rpg-audio",
+      "download": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "impact": {
+      "title": "Impact Sounds",
+      "author": "Kenney",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "rain": {
+      "title": "Rain (Ambient, Not Loopable) 2 Versions Available.",
+      "author": "OveMelaa / Ove Melaa",
+      "url": "https://opengameart.org/content/rain-ambient-not-loopable-2-versions-available",
+      "download": "https://opengameart.org/sites/default/files/Ove%20Melaa%20-%20Rainy%20%28NOT%20loopable%29.ogg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "wind": {
+      "title": "wind1",
+      "author": "Luke.RUSTLTD",
+      "url": "https://opengameart.org/content/wind1",
+      "download": "https://opengameart.org/sites/default/files/wind1.wav",
+      "note": "The source author describes these as synthesized wind sounds created using PureData.",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "generator": {
+      "title": "Generator (loop)",
+      "author": "YCbCr",
+      "url": "https://opengameart.org/content/generator-loop",
+      "download": "https://opengameart.org/sites/default/files/loop_generator_1.mp3",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "crow": {
+      "title": "Crow caw",
+      "author": "zeroisnotnull",
+      "url": "https://opengameart.org/content/crow-caw",
+      "download": "https://opengameart.org/sites/default/files/crow_caw.wav",
+      "note": "Field recording made near Cairo according to author.",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "zipper": {
+      "title": "Zipper",
+      "author": "AntumDeluge",
+      "url": "https://opengameart.org/content/zipper",
+      "download": "https://opengameart.org/sites/default/files/zipper-1.wav",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    },
+    "whispers": {
+      "title": "Whispers",
+      "author": "colorsCrimsonTears",
+      "url": "https://freesound.org/people/colorsCrimsonTears/sounds/545696/",
+      "download": "https://cdn.freesound.org/previews/545/545696_11785387-hq.mp3",
+      "note": "Public HQ MP3 preview; author describes recording and processing a toaster oven, producing whisper-like sound design; no intelligible speech.",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "verifiedOn": "2026-10-17"
+    }
+  },
+  "files": [
+    {
+      "file": "cart.mp3",
+      "duration": 5.537959,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 89069,
+      "sha256": "ae15c815078fe5531d1799d7028d5f2aa8d66f32e2e522607a20df9e802331a0",
+      "peakDb": -3.4,
+      "sources": [
+        "rpg",
+        "impact"
+      ],
+      "processing": "Cart creaks, restrained metal rattle and sack cloth; staggered layers, slight slowing, no loop.",
+      "sourceFiles": [
+        "rpg/Audio/creak2.ogg",
+        "impact/Audio/impactMetal_medium_002.ogg",
+        "rpg/Audio/creak1.ogg",
+        "rpg/Audio/cloth3.ogg",
+        "rpg/Audio/creak3.ogg"
+      ]
+    },
+    {
+      "file": "rain.mp3",
+      "duration": 10.03102,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 160958,
+      "sha256": "453cb19a75c5e42bfbe6af4ce10bb953271d8a279d8a6d6ee9bea3a86d1ea4dd",
+      "peakDb": -6.9,
+      "sources": [
+        "rain"
+      ],
+      "processing": "Ten-second excerpt of rain, filtering, fades; intended as a one-shot arrival cue, not a seamless loop.",
+      "sourceFiles": [
+        "rain.ogg"
+      ]
+    },
+    {
+      "file": "lift.mp3",
+      "duration": 6.034286,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 97029,
+      "sha256": "c6cfc71b0f77112e665147ecc8255d69d7287485043d9d93241676ca6ad21362",
+      "peakDb": -2.6,
+      "sources": [
+        "generator",
+        "rpg",
+        "impact"
+      ],
+      "processing": "Industrial motor start, stressed mechanism and ending latch/metal clunk; no loop.",
+      "sourceFiles": [
+        "generator.mp3",
+        "rpg/Audio/metalLatch.ogg",
+        "rpg/Audio/creak3.ogg",
+        "impact/Audio/impactMetal_medium_001.ogg",
+        "rpg/Audio/metalLatch.ogg"
+      ]
+    },
+    {
+      "file": "reeds.mp3",
+      "duration": 9.038367,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 145075,
+      "sha256": "f44e22d74c7b4ecf1685dac037688a6c02e1224fff5c5be24804352e78f6e702",
+      "peakDb": -4.4,
+      "sources": [
+        "wind"
+      ],
+      "processing": "Library wind excerpt, resonant EQ and short echoes to suggest anomalous singing reeds; no added synthesized tones.",
+      "sourceFiles": [
+        "wind1.wav"
+      ]
+    },
+    {
+      "file": "backpack.mp3",
+      "duration": 3.239184,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 52288,
+      "sha256": "3c5b7309a7cbef39fa0c8fe0dcc6e060eb258e6e648e8c7daad207f641608d89",
+      "peakDb": -3.4,
+      "sources": [
+        "rpg",
+        "zipper"
+      ],
+      "processing": "Cloth handling, zipper and leather movement; staggered natural foley.",
+      "sourceFiles": [
+        "rpg/Audio/cloth2.ogg",
+        "zipper.wav",
+        "rpg/Audio/handleSmallLeather2.ogg",
+        "rpg/Audio/cloth1.ogg"
+      ]
+    },
+    {
+      "file": "guide.mp3",
+      "duration": 4.231837,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 68171,
+      "sha256": "6b49c82ffc61976ca1e27766be90ac2350d3cb17337081678a43b5bd4cdb6c20",
+      "peakDb": -3.2,
+      "sources": [
+        "impact",
+        "rpg"
+      ],
+      "processing": "Six footsteps on grass recede, with restrained equipment cloth; no loop.",
+      "sourceFiles": [
+        "impact/Audio/footstep_grass_000.ogg",
+        "impact/Audio/footstep_grass_001.ogg",
+        "impact/Audio/footstep_grass_002.ogg",
+        "impact/Audio/footstep_grass_003.ogg",
+        "rpg/Audio/clothBelt2.ogg",
+        "impact/Audio/footstep_grass_000.ogg",
+        "impact/Audio/footstep_grass_001.ogg"
+      ]
+    },
+    {
+      "file": "caravan.mp3",
+      "duration": 6.034286,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 97044,
+      "sha256": "40264033389fc093c328d211c4d62ad424aa4fd37af1ead85e491a2b792ccbbd",
+      "peakDb": -3.4,
+      "sources": [
+        "crow",
+        "impact",
+        "rpg"
+      ],
+      "processing": "Recorded crow over broken wood/creaks and scavenged cloth; layered arrival cue.",
+      "sourceFiles": [
+        "crow.wav",
+        "impact/Audio/impactWood_medium_000.ogg",
+        "rpg/Audio/creak2.ogg",
+        "impact/Audio/impactWood_light_002.ogg",
+        "rpg/Audio/cloth4.ogg"
+      ]
+    },
+    {
+      "file": "marks.mp3",
+      "duration": 8.045714,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 129193,
+      "sha256": "edb95a4656060cf44dc847b39294c906faf64a9c2e3ec99359dd539868f042b7",
+      "peakDb": -3.4,
+      "sources": [
+        "whispers",
+        "wind"
+      ],
+      "processing": "Freesound whisper-like processed texture over quiet wind; no words, excerpt/EQ/short echo, no loop.",
+      "sourceFiles": [
+        "whispers-hq.mp3",
+        "wind1.wav"
+      ]
+    }
+  ]
+}

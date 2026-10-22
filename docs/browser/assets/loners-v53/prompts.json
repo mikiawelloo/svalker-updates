@@ -1,0 +1,18 @@
+[
+  [
+    "background",
+    "Use case: background-extraction / precise-object-edit. Edit the supplied game scene faithfully. Preserve photorealism, identity, clothes, pose, proportions, original lighting and exact position in the source canvas. Output 1536x1024, one image, no collage, no text. Remove ALL THREE MEN entirely, including the open backpack in right man's hands. Reconstruct empty wall, crates and floor behind them. Keep the lamps, pipes, door, support column, crates and bench stationary at identical source positions. Leave the gun leaning near the left lamp in the background. This is a clean empty background plate matching original. Opaque full scene, no people."
+  ],
+  [
+    "sedoy",
+    "Use case: background-extraction / precise-object-edit. Edit the supplied game scene faithfully. Preserve photorealism, identity, clothes, pose, proportions, original lighting and exact position in the source canvas. Output 1536x1024, one image, no collage, no text. Extract ONLY the LEFT SEATED man, his body, clothing, hands and boots, exact same pose and source location. Make EVERY OTHER PIXEL genuinely alpha transparent: remove the other two men, floor, wall, crate he sits on, lamps and all scenery. Do NOT recenter or enlarge him: keep his feet and head at identical source coordinates in the full landscape canvas. Clean precise alpha edges, no glow or shadow background. No crate, no floor. Only seated man's silhouette."
+  ],
+  [
+    "mart",
+    "Use case: background-extraction / precise-object-edit. Edit the supplied game scene faithfully. Preserve photorealism, identity, clothes, pose, proportions, original lighting and exact position in the source canvas. Output 1536x1024, one image, no collage, no text. Extract ONLY the CENTER STANDING man leaning against wall, complete head, body, arms, hands, legs and boots, same pose and same location. All other pixels genuinely transparent, including wall, door, lamps, other men and ground. Do NOT recenter or enlarge: retain exact source coordinates in full landscape canvas. Clean precise alpha edges, no glow, no props that are not worn."
+  ],
+  [
+    "shilo",
+    "Use case: background-extraction / precise-object-edit. Edit the supplied game scene faithfully. Preserve photorealism, identity, clothes, pose, proportions, original lighting and exact position in the source canvas. Output 1536x1024, one image, no collage, no text. Extract ONLY the RIGHT CROUCHING man inspecting his backpack, include his complete silhouette, hands, boots and open backpack he is touching, same pose and source location. All other pixels genuinely alpha transparent: remove other men, wall, bench, pipes, floor, lamps. Do NOT recenter or enlarge: retain exact source coordinates in full landscape canvas. Clean detailed alpha edges, no glow or shadow background."
+  ]
+]

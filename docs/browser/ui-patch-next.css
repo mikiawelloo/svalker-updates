@@ -1,0 +1,99 @@
+/* СВАЛКЕР: очередной браузерный патч, только интерфейс. */
+:root { --svalker-bottom-gap: max(52px, env(safe-area-inset-bottom, 0px)); }
+/* Dark HUD background on every base screen, including NPC interiors. */
+.game:not(.on-expedition) { background-color:#0a1115; }
+.game:not(.on-expedition) > .vitals {
+  position:relative;
+  z-index:1;
+  background:linear-gradient(180deg,rgba(9,15,19,.11) 0%,rgba(9,15,19,.76) 49%,#0b1317 100%);
+}
+.game:not(.on-expedition) > .vitals::before {
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:calc(100% - 1px);
+  height:clamp(65px,12dvh,145px);
+  background:linear-gradient(180deg,transparent,rgba(9,15,19,.76));
+  pointer-events:none;
+}
+.game:not(.on-expedition) > .action-panel {
+  position:relative;
+  z-index:2;
+  background:#0b1317;
+  border-top:0;
+}
+.game:not(.on-expedition) > .content,
+.game:not(.on-expedition) > #journalPanel,
+.game:not(.on-expedition) > .bottom-nav { background-color:#0b1317; }
+#sceneSection.hub-scene62 { background-color:#0b1317; }
+/* Keep the extended panorama on the settlement yard, but darken its HUD. */
+.game.settlement-extended82 > .vitals {
+  background:linear-gradient(180deg,rgba(9,15,19,.10),rgba(9,15,19,.79) 55%,#0b1317 100%);
+}
+.game.settlement-extended82 > .action-panel {
+  background:#0b1317;
+}
+/* Avoid overlap between a label and movement controls at narrow widths. */
+.hub-scene62 .hub-label62 {
+  bottom:clamp(84px,12%,106px);
+  max-width:min(70%,260px);
+  font-size:clamp(10px,2.9vw,12px);
+  line-height:1.35;
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+.hub-scene62 .hub-nav62 { gap:7px; }
+.hub-scene62 .hub-nav62 .hub-nav-button62 {
+  min-width:0; max-width:48%;
+  padding:8px 9px;
+  text-wrap:balance;
+  line-height:1.25;
+}
+@media(max-width:500px) {
+  /* Extra fallback protects Android 3-button and gesture navigation,
+     including WebViews returning safe-area-inset-bottom:0. */
+  .game:not(.on-expedition) > .action-panel {
+    padding-bottom:var(--svalker-bottom-gap)!important;
+  }
+  .game.on-expedition > .action-panel {
+    padding-bottom:var(--svalker-bottom-gap)!important;
+  }
+  .game > .bottom-nav:not([hidden]) {
+    padding-bottom:var(--svalker-bottom-gap);
+  }
+  .modal-backdrop { padding-bottom:var(--svalker-bottom-gap); }
+  .toast { bottom:calc(var(--svalker-bottom-gap) + 16px); }
+}
+
+
+/* Smoothly blend NPC scenes into the lower HUD instead of cutting to a flat block. */
+.game.hub-room62 > .scene-section{
+  height:clamp(390px,58dvh,470px);
+}
+.game.hub-room62 > .vitals{
+  margin-top:clamp(-86px,-11dvh,-58px);
+  padding-top:clamp(86px,12dvh,112px);
+  background:linear-gradient(180deg,rgba(8,13,17,0) 0%,rgba(8,13,17,.72) 28%,rgba(8,13,17,.94) 58%,#0b1317 100%);
+}
+.game.hub-room62 > .vitals::before{
+  height:0;
+  background:none;
+}
+.game.hub-room62 > .action-panel{
+  margin-top:-1px;
+  background:linear-gradient(180deg,#0b1317,#0a1115);
+}
+.game.hub-room62 .scene-shade{
+  background:linear-gradient(180deg,rgba(7,11,14,.06) 0%,rgba(7,11,14,.12) 42%,rgba(7,11,14,.46) 76%,rgba(7,11,14,.92) 100%);
+}
+/* Dialog/service windows stay text-first: no duplicated NPC photos inside the modal. */
+.modal .p72-npc,
+.modal .npc-dialog-photo,
+.modal .npc-dialog-art,
+.modal .npc-art-large{
+  display:none !important;
+}
+.modal .p72-npc + p{margin-top:0;}
+@media(max-width:500px){
+  .game.hub-room62 > .scene-section{height:clamp(360px,54dvh,430px);}
+  .game.hub-room62 > .vitals{margin-top:clamp(-78px,-10dvh,-52px);padding-top:clamp(78px,11dvh,104px);}
+}

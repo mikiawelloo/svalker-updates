@@ -1,0 +1,72 @@
+[
+  {
+    "file": "background-main.mp3",
+    "uploaded_name": "1(1).mp3",
+    "role": "main background",
+    "gain": 0.55,
+    "duration": 15.696,
+    "sha256": "ec33e2ea4cc43df6b600f28733d03206748484f283cfd3f2f6bddda8898e94ef",
+    "channels": 2,
+    "sample_rate": 24000
+  },
+  {
+    "file": "background-2.mp3",
+    "uploaded_name": "2.mp3",
+    "role": "overlay",
+    "gain": 0.07,
+    "duration": 4.284082,
+    "sha256": "a901cd6d030f6a348ba243c61cdc3999add511be88ad68c6fa737cb6fed12c33",
+    "channels": 2,
+    "sample_rate": 44100
+  },
+  {
+    "file": "background-2-1.mp3",
+    "uploaded_name": "2.1.mp3",
+    "role": "overlay",
+    "gain": 0.014,
+    "duration": 13.374694,
+    "sha256": "47eac4936fbf84be316d645d7f8424723f4f62e713e35ac75f95b4fc4fc5608b",
+    "channels": 2,
+    "sample_rate": 44100
+  },
+  {
+    "file": "background-2-2.mp3",
+    "uploaded_name": "2.2.mp3",
+    "role": "overlay",
+    "gain": 0.07,
+    "duration": 3.408,
+    "sha256": "1e30b449ca1767e62d7aec39744ee176b514845dd9ea4bba28870653a718fc42",
+    "channels": 2,
+    "sample_rate": 48000
+  },
+  {
+    "file": "windup.mp3",
+    "uploaded_name": "3.mp3",
+    "role": "before attack",
+    "gain": 0.16,
+    "duration": 0.312,
+    "sha256": "e5cadbd1425e6cc188ba62abd55f3657cef7da71afe8a0ddc7d79321826844d6",
+    "channels": 2,
+    "sample_rate": 48000
+  },
+  {
+    "file": "attack.mp3",
+    "uploaded_name": "4.mp3",
+    "role": "attack",
+    "gain": 0.48,
+    "duration": 1.097125,
+    "sha256": "c70216a3ed9a8231c75b1978d3b8105c17e6fcb8d168cd02c71b36a3317dcb55",
+    "channels": 2,
+    "sample_rate": 44100
+  },
+  {
+    "file": "death.mp3",
+    "uploaded_name": "5.mp3",
+    "role": "final death",
+    "gain": 0.6,
+    "duration": 11.9902,
+    "sha256": "564b4820d2eccf5fb6dae96b30d330fad7a31957da5b8cde1414aa330419358f",
+    "channels": 2,
+    "sample_rate": 44100
+  }
+]

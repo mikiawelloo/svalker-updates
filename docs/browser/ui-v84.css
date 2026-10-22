@@ -1,0 +1,56 @@
+/* СВАЛКЕР · Alfa 0.84: alignment of the foreground HUD to the bottom of
+   the extended settlement panorama. Scoped to the settlement only. */
+.game.settlement-extended82:not(.on-expedition){
+  display:flex;
+  flex-direction:column;
+  min-height:100dvh;
+}
+.game.settlement-extended82:not(.on-expedition)>.scene-section{
+  flex:0 0 auto;
+}
+.game.settlement-extended82:not(.on-expedition)>.vitals{
+  margin-top:auto;
+  position:relative;
+  isolation:isolate;
+  padding:16px 15px 8px;
+  background:linear-gradient(to bottom,rgba(9,14,18,.72),rgba(9,14,18,.91));
+}
+.game.settlement-extended82:not(.on-expedition)>.vitals::before{
+  content:"";
+  position:absolute;
+  height:110px;
+  left:0;right:0;bottom:100%;
+  pointer-events:none;
+  background:linear-gradient(to bottom,rgba(9,14,18,0),rgba(9,14,18,.72));
+}
+.game.settlement-extended82:not(.on-expedition)>.action-panel{
+  position:relative;
+  z-index:1;
+  margin:0;
+  padding:9px 14px max(16px,env(safe-area-inset-bottom));
+  background:rgba(9,14,18,.94);
+}
+.game.settlement-extended82:not(.on-expedition)>.bottom-nav{
+  position:relative;
+  z-index:2;
+  margin-top:0;
+  background-color:#0c1418;
+}
+.front-version84{
+  position:absolute;
+  z-index:7;
+  right:max(14px,env(safe-area-inset-right));
+  bottom:max(10px,calc(env(safe-area-inset-bottom) + 8px));
+  color:#d4d7cc;
+  font:600 12px/1.3 system-ui,Arial,sans-serif;
+  letter-spacing:.09em;
+  opacity:.86;
+  text-shadow:0 1px 5px #000;
+  pointer-events:none;
+  user-select:none;
+}
+@media(max-width:360px){
+  .game.settlement-extended82:not(.on-expedition)>.vitals{padding-inline:10px}
+  .game.settlement-extended82:not(.on-expedition)>.action-panel{padding-inline:10px}
+  .front-version84{font-size:11px}
+}

@@ -1,0 +1,80 @@
+# Звуки СВАЛКЕР
+
+## Мрачная музыка, ночь и патруль · v9 (актуальная версия)
+
+- `combat-dark-v9.mp3` — German Industrial Metal by Bogart VGM — https://www.facebook.com/BogartVGM/ — CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Источник: https://opengameart.org/content/german-industrial-metal . Изменено: отрезок 32 сек., фильтры, компрессия 3:1, loop crossfade 500 мс, преобразование в моно и нормализация. Авторская инструментальная индустриальная metal-тема с гитарными риффами, барабанами и synth. Боевая тема v8 заменена.
+- `night-v9.mp3` — Lost in a bad place (horror ambience loop), congusbongus — CC0 1.0. Источник: https://opengameart.org/content/lost-in-a-bad-place-horror-ambience-loop . Отрезок хоррор-дрона 32 сек., мягкое зацикливание 1,5 сек., фильтрация/моно/нормализация. Ночью заменяет дневной лес на маршруте, под боевой темой звучит тихо.
+- `patrol-fail-v9.wav` — обработанные Foley Kenney Impact Sounds, https://kenney.nl/assets/impact-sounds — CC0 1.0. Три металлических удара с нисходящей высотой тона и отражениями, 2,2 сек. Сигнал провала звучит ровно один раз при задержании патрулём, днём или при просроченном выключении фонаря.
+- Новая музыка не использует оригинальный саундтрек Doom. Все файлы локальные, mono 44,1 кГц: MP3 128 kbps для музыки и ночи, PCM16 WAV для сигнала. Подробные исходники, лицензии и преобразования: `dark-manifest.json`.
+
+## Отдых и звуковые сцены v8
+
+- `camp-crowd.wav` — murmuring, blaastaal, https://freesound.org/people/blaastaal/sounds/766658/ — CC0 1.0. Публичный HQ preview записи людей, приглушённый фильтрами 100–1700 Гц, мягкий цикл 20 сек.
+- `camp-guitar.wav` — A Small Fire Will Do (Calming Loop), Cal McEachern / Trex0n, https://opengameart.org/content/a-small-fire-will-do-calming-loop — CC0 1.0. Спокойная акустическая гитара, подготовлен цикл 16 сек. Авторы не уточняют живые или семплированные инструменты.
+- `combat-music.mp3` — Battle Theme, Wolfgang_ / Theodore Kerr, https://opengameart.org/content/battle-theme-0 — CC0 1.0. Инструментальная оркестровая тема, подготовлен цикл 44 сек., mono MP3 128 kbps; мягкий переход 1,5 сек.
+- `level-up.wav` — Kenney Interface Sounds, https://kenney.nl/assets/interface-sounds — CC0 1.0. Три копии glass_004.ogg с повышением высоты и коротким отражением, 1,5 сек.; без генерации тонов.
+- Подробные исходные ссылки, лицензии, форматы, измеренные уровни и обработка: `atmosphere-manifest.json`. CC0: https://creativecommons.org/publicdomain/zero/1.0/ .
+
+В дороге звучит локальный Forest Ambience (TinyWorlds); на базе — костёр PagDev, тихая толпа и гитара; на привале — костёр и приглушённый лес; после первого выстрела/неудачного побега начинается боевая тема и тихий лес. Тема заканчивается при победе/уходе. Сцены переключаются с мягкими огибающими, загрузки устаревших циклов отменяются. Выключение звука и скрытие вкладки прекращают все источники; при возвращении включается текущая сцена.
+
+## Дорожные события v7
+
+- `campfire.wav` — Fireplace Sound loop, PagDev, https://opengameart.org/content/fireplace-sound-loop — CC0 1.0. Реальная запись костра, 16-секундный цикл с секундным equal-power crossfade. Треск звучит у встреченного костра и в безопасном привале.
+- `water.wav` — Waterflow Sound, TyberiusGames, https://opengameart.org/content/waterflow-sound — CC0 1.0. Самозаписанная вода, отрезок 3,4 сек. с мягкими краями 40 мс; используется вместе с записанным глотком.
+- Оба файла: mono PCM16 44,1 кГц, пик −3,35 дБFS. CC0: https://creativecommons.org/publicdomain/zero/1.0/ . Полная информация и исходные ссылки: `events-manifest.json`.
+- Привал использует записи ткани и дерева; торговля — монет; патруль — ремня и тяжёлого шага из уже перечисленных ниже наборов. Синтез отсутствует. Огонь останавливается при уходе с привала, скрытии вкладки или отключении звука и возобновляется при возвращении.
+
+В игру встроены локальные звуковые файлы, лицензии CC0 и CC BY 3.0. Звук не требует обращения к сторонним сайтам во время игры. В этой версии нет 8-битного синтеза или осцилляторов. Перечень исходных имён, подготовленных WAV и длительностей — `dist/assets/audio/manifest.json`.
+
+| Набор / автор | Страница источника | Использование |
+| --- | --- | --- |
+| Interface Sounds / Kenney | https://kenney.nl/assets/interface-sounds | Короткий щелчок `click_001.ogg` |
+| Impact Sounds / Kenney | https://kenney.nl/assets/impact-sounds | Шаги по траве и бетону, удары дерева/металла/стекла, банка, удар по персонажу |
+| RPG Audio / Kenney | https://kenney.nl/assets/rpg-audio | Ткань, защёлки, ремень, скрип, страницы, монеты, механические щелчки |
+| Zipper / AntumDeluge | https://opengameart.org/content/zipper | Открытие рюкзака, `zipper-1.wav` |
+| Forest Ambience / TinyWorlds | https://opengameart.org/content/forest-ambience | Фоновый цикл, `Forest_Ambience.mp3` |
+| Gunshot Sounds / Tabasco | https://opengameart.org/content/gunshot-sounds | Фрагмент записи пистолета, `sounds/cz.wav` |
+| Heartbeat sounds / bart | https://opengameart.org/content/heartbeat-sounds | Усталость и появление босса, `heartbeat_slow_0.wav` |
+| Dog Growl / bonebrah | https://opengameart.org/content/dog-growl | Запись рычания собаки, `dog-growl.wav` |
+| Dog barking mono / Brandon Morris (HaelDB) | https://opengameart.org/content/dog-barking-mono | Запись лая при атаке, `dog-bark.wav` |
+| Gun reload sounds / SpringySpringo | https://opengameart.org/content/gun-reload-sounds | Механизм оружия, `reload.wav` |
+| Liquid Bottle Drink Set / qubodup | https://opengameart.org/content/liquid-bottle-drink-set | Открытие бутылки и глоток, `bottle-open-02.flac`, `swallow-01.flac` |
+
+Оригинальные лицензии Kenney и Tabasco сохранены рядом со звуками. Страницы отдельных звуков OpenGameArt указывают CC0: https://creativecommons.org/publicdomain/zero/1.0/ .
+
+## Подготовка и воспроизведение
+
+37 эффектов преобразованы в моно WAV PCM, 16 бит, 44,1 кГц. Убрана ведущая тишина, длительность ограничена, пиковая громкость приведена максимум к −3 дБFS, добавлен короткий мягкий выход. Лесной MP3 сохранён целиком как бесшовный цикл автора. Новые звуки — рычание, лай, механизм оружия. Клин и неудача улучшения используют локальные механические/ударные записи.
+
+Файлы предзагружаются, AudioContext запускается первым касанием/кликом или Enter/Space. Буферы декодируются один раз. Громкость эффектов различается, используется компрессор на общем выходе. Шаги имеют по три варианта на поверхность и не повторяют предыдущий вариант подряд. Небольшие изменения громкости и скорости уменьшают ощущение повторов. Короткие звуки не накапливаются при быстрых нажатиях; устаревшие и загруженные после выключения звука эффекты отменяются. При скрытии вкладки и выключении звука источники останавливаются.
+
+Проверено: декодируемые WAV-файлы, существование путей; буферное воспроизведение и кэш, жест запуска, события интерфейса, варианты шагов, выключение/возврат звука, отмена ожидающих эффектов, скрытая вкладка и неуспешная загрузка. Аудио в реальном мобильном браузере в этой среде не прослушивалось.
+
+## Рассвет и ночной вой
+
+- Rooster Crowing — Mike Koenig, https://soundbible.com/1134-Rooster-Crowing.html — CC BY 3.0. Источник: `Rooster Crowing-SoundBible.com-43612401.mp3`, подготовлен как `rooster.wav`; звучит на рассвете.
+- Wolf Howling Yipping — Daniel Simon, https://soundbible.com/2132-Wolf-Howling-Yipping.html — CC BY 3.0. Источник: `cartoon-wolf-daniel_simon.mp3`, подготовлен как `wolves.wav`; звучит в начале ночи и через 60 и 120 секунд ночного времени.
+- Лицензия: https://creativecommons.org/licenses/by/3.0/ . Для обоих изменены формат/частота/число каналов, убрана начальная тишина, ограничен пик, добавлены мягкие края. Записи воспроизводятся из локальных файлов. Авторство доступно по ссылке «Звуки и авторы» внизу базы; на вылазке подвал скрыт.
+
+Новые события проверены вместе с циклом дня, выключением звука и скрытой вкладкой.
+
+
+V45 Zombie voices: ArcadeParty — Zombie / Skeleton / Monster Voice Effects
+https://opengameart.org/content/zombie-skeleton-monster-voice-effects
+License: CC0 (https://creativecommons.org/publicdomain/zero/1.0/).
+zombie-roar.wav = zombieYell10.wav; zombie-death.wav = zombieDeath3.wav.
+zombie-attack.wav combines zombieYell1.wav with the existing licensed hit.wav; level adjusted.
+New snore.mp3 supplied by the game author; uploaded file retained unchanged.
+
+
+NEW EVENTS v47 (2026-10-17)
+Eight locally hosted one-shot soundscapes from CC0 sources. Full authors, license links and processing: ../events-v47/audio/CREDITS.md
+Kenney RPG Audio: https://kenney.nl/assets/rpg-audio
+Kenney Impact Sounds: https://kenney.nl/assets/impact-sounds
+Ove Melaa Rain: https://opengameart.org/content/rain-ambient-not-loopable-2-versions-available
+Luke.RUSTLTD wind1: https://opengameart.org/content/wind1
+YCbCr Generator: https://opengameart.org/content/generator-loop
+zeroisnotnull Crow caw: https://opengameart.org/content/crow-caw
+AntumDeluge Zipper: https://opengameart.org/content/zipper
+colorsCrimsonTears Whispers: https://freesound.org/people/colorsCrimsonTears/sounds/545696/
+License for all new sources: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,0 +1,74 @@
+{
+  "wounded": {
+    "duration_s": 3.4,
+    "peak": 0.65,
+    "rms": 0.0858,
+    "bytes": 149984
+  },
+  "tripwire": {
+    "duration_s": 1.8,
+    "peak": 0.65,
+    "rms": 0.0465,
+    "bytes": 79424
+  },
+  "radio-static": {
+    "duration_s": 3.8,
+    "peak": 0.65,
+    "rms": 0.0896,
+    "bytes": 167624
+  },
+  "emission-siren": {
+    "duration_s": 4.4,
+    "peak": 0.65,
+    "rms": 0.2814,
+    "bytes": 194084
+  },
+  "anomaly-fog": {
+    "duration_s": 6.0,
+    "peak": 0.65,
+    "rms": 0.1208,
+    "bytes": 264644
+  },
+  "rival-loot": {
+    "duration_s": 2.5,
+    "peak": 0.65,
+    "rms": 0.0822,
+    "bytes": 110294
+  },
+  "night-shadow": {
+    "duration_s": 3.6,
+    "peak": 0.65,
+    "rms": 0.0751,
+    "bytes": 158804
+  },
+  "mutant-tracks": {
+    "duration_s": 3.4,
+    "peak": 0.65,
+    "rms": 0.0868,
+    "bytes": 149984
+  },
+  "mini-success": {
+    "duration_s": 1.15,
+    "peak": 0.65,
+    "rms": 0.0823,
+    "bytes": 50758
+  },
+  "mini-fail": {
+    "duration_s": 1.5,
+    "peak": 0.65,
+    "rms": 0.094,
+    "bytes": 66194
+  },
+  "radio-loop": {
+    "duration_s": 10.0,
+    "peak": 0.65,
+    "rms": 0.0974,
+    "bytes": 441044
+  },
+  "emission-rumble": {
+    "duration_s": 10.0,
+    "peak": 0.65,
+    "rms": 0.1305,
+    "bytes": 441044
+  }
+}

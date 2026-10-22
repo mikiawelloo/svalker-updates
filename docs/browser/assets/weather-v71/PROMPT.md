@@ -1,0 +1,3 @@
+Built-in imagegen, transparent_background: true.
+
+Use case: photorealistic-natural. Asset type: transparent game weather VFX sprite. A single realistic cloud-to-ground lightning discharge, long vertically branching irregular thin brilliant white core with subtle icy blue bloom, photographic high-voltage plasma filaments with a few fine natural side branches. Isolated on genuine transparent background. Entire lightning fits inside portrait canvas, generous transparent margin, no ground, no clouds, no sky, no frame, no text. This is composited over a dark post-apocalyptic game scene during a brief storm flash. Natural photographic lightning, not a cartoon zigzag or neon icon.

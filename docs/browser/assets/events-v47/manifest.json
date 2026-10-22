@@ -1,0 +1,70 @@
+{
+  "version": 47,
+  "images": [
+    {
+      "file": "backpack.png",
+      "width": 1330,
+      "height": 1182,
+      "bytes": 3316867,
+      "sha256": "bdea47153de808826e003fc562d09d77e0af61e5c1f52942927743ec9ce18d0d",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "caravan.png",
+      "width": 1330,
+      "height": 1182,
+      "bytes": 3205189,
+      "sha256": "834af7f88db62f6d164fdbc450f583ebd9a8c55fb905b7f00a418c32e02c0f6e",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "cart.png",
+      "width": 1330,
+      "height": 1183,
+      "bytes": 3542673,
+      "sha256": "a48bb95b1d6ddd783323d857420492c095558b8c3133015c8b51d06711c22a2e",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "guide.png",
+      "width": 1330,
+      "height": 1182,
+      "bytes": 3365410,
+      "sha256": "3972baca6c017396ae30dc74e3ed0ea9514304b7f2ccfda498ccb9c2fb9445ac",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "lift.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3040560,
+      "sha256": "b596c0624acde94cccba0b9d06b1c08d379e29c05973b17e27a76ddaf12519b3",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "marks.png",
+      "width": 1330,
+      "height": 1182,
+      "bytes": 3289291,
+      "sha256": "9b603cd29b82ab5d9dbe48c66dc8690ad8b2c832985b45f182eb2388bbe2713e",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "rain.png",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 3243800,
+      "sha256": "1facf9ba0cc2cdb5d6c3e23d9829bf01a409ba5e8581ff26269d16f78a411016",
+      "origin": "imagegen original, no pixel edits"
+    },
+    {
+      "file": "reeds.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2813485,
+      "sha256": "66154467e2906fc05c033740a400646963fd8fe1ff7552e5d986954bbe9ccec4",
+      "origin": "imagegen original, no pixel edits"
+    }
+  ],
+  "audio": "audio/manifest.json"
+}

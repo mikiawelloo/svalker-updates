@@ -1,0 +1,40 @@
+{
+  "version": 48,
+  "generator": "imagegen",
+  "reference": "../rare-v23/radioAmbush.webp",
+  "files": [
+    {
+      "file": "aim.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "bytes": 2081838,
+      "sha256": "9a064b86f4bd689f5aa779c6aebf3a816c33c8bf837f92079c791ae3f62af14f"
+    },
+    {
+      "file": "background.png",
+      "width": 1330,
+      "height": 1182,
+      "mode": "RGB",
+      "bytes": 2879038,
+      "sha256": "b0958c8f47cf71d816f29076762268b200475a3dc40323c7362f264e73b9f92f"
+    },
+    {
+      "file": "dead.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 2081904,
+      "sha256": "13f78cef7e45a37d2c1f8a5266452d1d9dfe309d8a01f36f8ec27417a7ba028a"
+    },
+    {
+      "file": "idle.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "bytes": 2102689,
+      "sha256": "2ccca0f0780aa43ee86b09aecf4766f6ed428d2e8a6b59cf525c0e2b5ce57b49"
+    }
+  ],
+  "notes": "Original generated pixels retained. Background includes truck cover; character sprites use native alpha. Canvas handles pose blending and foreground occlusion."
+}

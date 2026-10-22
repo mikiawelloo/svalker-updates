@@ -1,0 +1,5 @@
+CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+Dog Growl — bonebrah — https://opengameart.org/content/dog-growl
+Dog barking mono — Brandon Morris (submitted by HaelDB) — https://opengameart.org/content/dog-barking-mono
+Gun reload sounds — SpringySpringo — https://opengameart.org/content/gun-reload-sounds
+Sources list CC0; adapted to mono 16-bit 44100 Hz WAV, trimmed and normalized.

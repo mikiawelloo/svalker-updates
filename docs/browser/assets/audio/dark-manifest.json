@@ -1,0 +1,62 @@
+[
+  {
+    "file": "combat-dark-v9.mp3",
+    "title": "German Industrial Metal",
+    "author": "Bogart VGM",
+    "source_url": "https://opengameart.org/content/german-industrial-metal",
+    "download_url": "https://opengameart.org/sites/default/files/German%20Industrial%20Metal_0.mp3",
+    "author_url": "https://www.facebook.com/BogartVGM/",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "required_credit": "German Industrial Metal by Bogart VGM — https://www.facebook.com/BogartVGM/ — CC BY 4.0. Edited: excerpt, filters, loop crossfade, mono conversion and gain normalization.",
+    "transformations": "Aggressive industrial-metal guitar/drums/synth track by Bogart VGM, unrelated to Doom OST; excerpt seconds 32–64.5, downmixed mono 44.1 kHz, high-pass45 Hz/low-pass10500 Hz, 3:1 dynamic compression (8 ms attack,100 ms release), 500 ms equal-power wrap crossfade yields 32-second loop, normalized to −4.44 dBFS before MP3 128 kbps encoding.",
+    "duration": 32.0,
+    "channels": 1,
+    "sample_rate": 44100,
+    "encoding": "MP3 128 kbps",
+    "bytes": 512879,
+    "verified_peak_dBFS": -4.802,
+    "RMS_dBFS": -18.918,
+    "source_prepared_file": "combat-heavy.mp3"
+  },
+  {
+    "file": "night-v9.mp3",
+    "title": "Lost in a bad place (horror ambience loop)",
+    "author": "congusbongus",
+    "source_url": "https://opengameart.org/content/lost-in-a-bad-place-horror-ambience-loop",
+    "download_url": "https://opengameart.org/sites/default/files/lost_2.ogg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transformations": "Dark ambient horror pad/drone, excerpt seconds10–43.5, mono44.1 kHz, high-pass35 Hz/low-pass5800 Hz, 1.5-second equal-power wrap crossfade yields32-second loop, normalized to−4.44 dBFS before MP3 128 kbps encoding.",
+    "duration": 32.0,
+    "channels": 1,
+    "sample_rate": 44100,
+    "encoding": "MP3 128 kbps",
+    "bytes": 512879,
+    "verified_peak_dBFS": -4.883,
+    "RMS_dBFS": -18.387,
+    "source_prepared_file": "night-dark.mp3"
+  },
+  {
+    "file": "patrol-fail-v9.wav",
+    "title": "Impact Sounds (processed metallic failure sting)",
+    "author": "Kenney",
+    "source_url": "https://kenney.nl/assets/impact-sounds",
+    "source_files": [
+      "impactMetal_heavy_000.ogg",
+      "impactBell_heavy_000.ogg",
+      "impactBell_heavy_002.ogg"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transformations": "Three metallic Foley impacts pitch-shifted downward to0.68×/0.55×/0.43×, staggered, low-pass2600 Hz, quiet room reflections, 450 ms tail fade and4 ms attack fade, normalized to−3.74 dBFS; monoPCM16 44.1 kHz. No oscillator synthesis.",
+    "duration": 2.2,
+    "channels": 1,
+    "sample_rate": 44100,
+    "encoding": "PCM16",
+    "bytes": 194084,
+    "verified_peak_dBFS": -3.742,
+    "RMS_dBFS": -28.761,
+    "source_prepared_file": "patrol-fail.wav"
+  }
+]

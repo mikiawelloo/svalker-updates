@@ -1,0 +1,28 @@
+# Бомжара и бижутерия — ImageGen prompts
+
+All assets generated with built-in ImageGen, transparent_background: true. Alpha preserved. One independent image per asset.
+
+## bum.png
+
+Use case: stylized-concept. Asset type: isolated raster sprite for a gritty post-apocalyptic first-person survival browser game. Style: photorealistically painted, realistic gritty texture, muted gray olive brown and rusty palette, precise coherent anatomy/object construction, soft neutral directional lighting, readable thumbnail silhouette. Composition: one asset only centered, entire object/character visible, generous transparent margin around every edge. Background: actual transparent alpha, no background, no ground plane, no cast shadow outside subject. No UI, no text, no logos, no watermark, no insignia. Subject: a fictional adult disheveled hostile wandering male survivor, weathered face, long unkempt gray-brown beard, battered oversized dirty olive/brown layered coat, patched trousers, worn boots. Full body, three-quarter facing viewer in staggering awkward off-balance stance, clutching an ordinary glass bottle with no label. Face looks drunk and distrustful. Human, not a monster. Not a comedic racial caricature, no gore, no weapons beyond ordinary bottle.
+
+## junkWatch.png
+
+Use case: stylized-concept. Asset type: isolated raster sprite for a gritty post-apocalyptic first-person survival browser game. Style: photorealistically painted, realistic gritty texture, muted gray olive brown and rusty palette, precise coherent anatomy/object construction, soft neutral directional lighting, readable thumbnail silhouette. Composition: one asset only centered, entire object/character visible, generous transparent margin around every edge. Background: actual transparent alpha, no background, no ground plane, no cast shadow outside subject. No UI, no text, no logos, no watermark, no insignia. Subject: isolated old decorative brass wristwatch with worn leather strap, modest cheap costume-jewelry feel. Strap in simple curved shape, watch face visible with little worn hands but no legible text or logo. Detailed tarnished case, visible tiny scuffs. Watch is lowest value in a series of found jewelry.
+
+## junkRing.png
+
+Use case: stylized-concept. Asset type: isolated raster sprite for a gritty post-apocalyptic first-person survival browser game. Style: photorealistically painted, realistic gritty texture, muted gray olive brown and rusty palette, precise coherent anatomy/object construction, soft neutral directional lighting, readable thumbnail silhouette. Composition: one asset only centered, entire object/character visible, generous transparent margin around every edge. Background: actual transparent alpha, no background, no ground plane, no cast shadow outside subject. No UI, no text, no logos, no watermark, no insignia. Subject: isolated tarnished ornamental yellow-metal ring with one small dull amber glass stone, angled view shows circular band and decorative setting, elegant worn engraved scroll details. More valuable-looking than an old brass wristwatch, but cheap found jewelry. No text.
+
+## junkChain.png
+
+Use case: stylized-concept. Asset type: isolated raster sprite for a gritty post-apocalyptic first-person survival browser game. Style: photorealistically painted, realistic gritty texture, muted gray olive brown and rusty palette, precise coherent anatomy/object construction, soft neutral directional lighting, readable thumbnail silhouette. Composition: one asset only centered, entire object/character visible, generous transparent margin around every edge. Background: actual transparent alpha, no background, no ground plane, no cast shadow outside subject. No UI, no text, no logos, no watermark, no insignia. Subject: isolated heavy decorative gold-colored chain necklace, arranged in a clearly complete open-center loop, thick polished but scratched curb chain links. Most valuable-looking item of a series of jewelry, realistic yellow metal highlights but restrained gritty worn appearance. No pendant, no neck, no person, no text.
+
+## bum.png — clean background refinement
+
+Use case: background-extraction. Edit target: the attached fictional disheveled survivor sprite. Remove all visible brown or black gradient backdrop, halo and shadow around the subject, replacing absolutely all pixels outside his body and bottle with clean transparent alpha 0. Preserve the exact man's face, hair, beard, olive brown ragged coat, clothes, boots, bottle, pose, lighting, and all fine edges. Full body including both boots and bottle fully visible, with 8% transparent margin. Single isolated character only. No environment, no ground plane, no external shadow, no text.
+
+## bum-down.png
+
+Use case: identity-preserve. Asset type: isolated full-body defeated enemy sprite for gritty survival game. Reference image: attached fictional wandering survivor; preserve exactly this man's weathered face, long gray-brown beard, unkempt medium hair, ragged dirty brown oversized coat, layers, patched trousers and battered boots. Change only pose: he is now lying fully on his side, entire head and body resting naturally in a horizontal non-graphic knocked-out pose, limbs relaxed. His same brown ordinary unlabeled glass bottle lies next to his hand, all visible. Eyes closed, no blood, no gore. Full body and bottle must fit with generous transparent margin in landscape composition. Same photorealistically painted gritty muted gray olive brown textures and soft neutral lighting. Actual transparent alpha background; absolutely no ground plane, environment, cast shadows outside character, UI, text, logos, insignia.
+

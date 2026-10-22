@@ -1,0 +1,228 @@
+[
+  {
+    "file": "click-1.wav",
+    "source": "interface/Audio/click_001.ogg",
+    "duration": 0.094,
+    "peak": 0.454
+  },
+  {
+    "file": "click-2.wav",
+    "source": "rpg/Audio/metalClick.ogg",
+    "duration": 0.18,
+    "peak": 0.707
+  },
+  {
+    "file": "click-3.wav",
+    "source": "impact/Audio/impactGeneric_light_000.ogg",
+    "duration": 0.158,
+    "peak": 0.623
+  },
+  {
+    "file": "latch.wav",
+    "source": "rpg/Audio/metalLatch.ogg",
+    "duration": 0.229,
+    "peak": 0.707
+  },
+  {
+    "file": "metal-click.wav",
+    "source": "rpg/Audio/metalClick.ogg",
+    "duration": 0.25,
+    "peak": 0.707
+  },
+  {
+    "file": "cloth-1.wav",
+    "source": "rpg/Audio/cloth1.ogg",
+    "duration": 0.594,
+    "peak": 0.707
+  },
+  {
+    "file": "cloth-2.wav",
+    "source": "rpg/Audio/cloth2.ogg",
+    "duration": 0.352,
+    "peak": 0.707
+  },
+  {
+    "file": "cloth-3.wav",
+    "source": "rpg/Audio/cloth3.ogg",
+    "duration": 0.421,
+    "peak": 0.707
+  },
+  {
+    "file": "book-open.wav",
+    "source": "rpg/Audio/bookOpen.ogg",
+    "duration": 0.129,
+    "peak": 0.707
+  },
+  {
+    "file": "book-close.wav",
+    "source": "rpg/Audio/bookClose.ogg",
+    "duration": 0.169,
+    "peak": 0.707
+  },
+  {
+    "file": "page.wav",
+    "source": "rpg/Audio/bookFlip1.ogg",
+    "duration": 0.6,
+    "peak": 0.707
+  },
+  {
+    "file": "belt.wav",
+    "source": "rpg/Audio/beltHandle1.ogg",
+    "duration": 0.255,
+    "peak": 0.707
+  },
+  {
+    "file": "coins-1.wav",
+    "source": "rpg/Audio/handleCoins.ogg",
+    "duration": 0.788,
+    "peak": 0.707
+  },
+  {
+    "file": "coins-2.wav",
+    "source": "rpg/Audio/handleCoins2.ogg",
+    "duration": 0.271,
+    "peak": 0.707
+  },
+  {
+    "file": "creak.wav",
+    "source": "rpg/Audio/creak1.ogg",
+    "duration": 0.493,
+    "peak": 0.707
+  },
+  {
+    "file": "wood.wav",
+    "source": "impact/Audio/impactWood_medium_000.ogg",
+    "duration": 0.327,
+    "peak": 0.707
+  },
+  {
+    "file": "grass-1.wav",
+    "source": "impact/Audio/footstep_grass_000.ogg",
+    "duration": 0.6,
+    "peak": 0.707
+  },
+  {
+    "file": "grass-2.wav",
+    "source": "impact/Audio/footstep_grass_001.ogg",
+    "duration": 0.6,
+    "peak": 0.707
+  },
+  {
+    "file": "grass-3.wav",
+    "source": "impact/Audio/footstep_grass_002.ogg",
+    "duration": 0.6,
+    "peak": 0.574
+  },
+  {
+    "file": "concrete-1.wav",
+    "source": "impact/Audio/footstep_concrete_000.ogg",
+    "duration": 0.1,
+    "peak": 0.707
+  },
+  {
+    "file": "concrete-2.wav",
+    "source": "impact/Audio/footstep_concrete_001.ogg",
+    "duration": 0.102,
+    "peak": 0.579
+  },
+  {
+    "file": "concrete-3.wav",
+    "source": "impact/Audio/footstep_concrete_002.ogg",
+    "duration": 0.107,
+    "peak": 0.648
+  },
+  {
+    "file": "glass-1.wav",
+    "source": "impact/Audio/impactGlass_light_000.ogg",
+    "duration": 0.228,
+    "peak": 0.707
+  },
+  {
+    "file": "glass-2.wav",
+    "source": "impact/Audio/impactGlass_light_001.ogg",
+    "duration": 0.204,
+    "peak": 0.707
+  },
+  {
+    "file": "can.wav",
+    "source": "impact/Audio/impactTin_medium_000.ogg",
+    "duration": 0.153,
+    "peak": 0.707
+  },
+  {
+    "file": "heavy.wav",
+    "source": "impact/Audio/impactPlate_heavy_000.ogg",
+    "duration": 0.486,
+    "peak": 0.707
+  },
+  {
+    "file": "hit.wav",
+    "source": "impact/Audio/impactPunch_medium_000.ogg",
+    "duration": 0.4,
+    "peak": 0.707
+  },
+  {
+    "file": "zipper.wav",
+    "source": "zipper.wav",
+    "duration": 0.818,
+    "peak": 0.707
+  },
+  {
+    "file": "heartbeat.wav",
+    "source": "heart.wav",
+    "duration": 1.795,
+    "peak": 0.707
+  },
+  {
+    "file": "bottle-open.wav",
+    "source": "drink/bottle-open-02.flac",
+    "duration": 0.342,
+    "peak": 0.707
+  },
+  {
+    "file": "swallow.wav",
+    "source": "drink/swallow-01.flac",
+    "duration": 0.285,
+    "peak": 0.707
+  },
+  {
+    "file": "shot.wav",
+    "source": "sounds/cz.wav",
+    "duration": 1.25,
+    "peak": 0.707
+  },
+  {
+    "file": "dog-growl.wav",
+    "source": "https://opengameart.org/sites/default/files/dog-growl.ogg",
+    "duration": 0.605,
+    "peak": 0.707
+  },
+  {
+    "file": "dog-bark.wav",
+    "source": "https://opengameart.org/sites/default/files/dog_barking_mono.wav",
+    "duration": 1.25,
+    "peak": 0.707
+  },
+  {
+    "file": "reload.wav",
+    "source": "https://opengameart.org/sites/default/files/gunreload1.wav",
+    "duration": 1.5,
+    "peak": 0.707
+  },
+  {
+    "file": "rooster.wav",
+    "source": "https://soundbible.com/1134-Rooster-Crowing.html",
+    "author": "Mike Koenig",
+    "license": "CC BY 3.0",
+    "duration": 2.465,
+    "peak": 0.707
+  },
+  {
+    "file": "wolves.wav",
+    "source": "https://soundbible.com/2132-Wolf-Howling-Yipping.html",
+    "author": "Daniel Simon",
+    "license": "CC BY 3.0",
+    "duration": 8.841,
+    "peak": 0.708
+  }
+]

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#182528">
+<title>СВАЛКЕР</title><meta name="description" content="СВАЛКЕР: вылазки в Зону, аномалии, выживание и тайны заброшенных территорий.">
+<link rel="preload" as="image" href="assets/base-v2.png">
+<link rel="preload" as="image" href="assets/dungeon-v10.webp">
+<link rel="preload" as="image" href="assets/road-v2.png">
+<link rel="preload" as="image" href="assets/items-v1.png">
+<link rel="preload" as="image" href="assets/equipment-v4.png">
+<link rel="preload" as="image" href="assets/portraits-v1.png">
+<link rel="preload" as="image" href="assets/trader-v1.jpg">
+<link rel="preload" as="image" href="assets/technician-v1.jpg">
+<link rel="preload" as="image" href="assets/buyer-v1.jpg">
+<link rel="stylesheet" href="style.css?v=80-79-77-72">
+<link rel="stylesheet" href="radio-echo.css?v=46">
+<link rel="stylesheet" href="menu-v81.css?v=81">
+<link rel="stylesheet" href="settlement-v82.css?v=82">
+<link rel="stylesheet" href="ui-v84.css?v=84">
+<link rel="stylesheet" href="ui-patch-next.css?v=next">
+<link rel="preload" as="image" href="assets/menu-v81/menu.webp">
+</head>
+<body class="front-open81">
+<div class="ambient" aria-hidden="true"></div>
+<main class="game" id="gameRoot">
+<canvas id="settlementGround82" class="settlement-ground82" hidden aria-hidden="true"></canvas>
+<section class="status"><div class="level" aria-label="Уровень персонажа"><span id="level">1</span></div><div class="money"><b id="money">120</b><small>₽</small></div><nav class="top-actions" aria-label="Игровые меню"><button id="inventoryTab" aria-label="Персонаж и инвентарь" title="Персонаж"><span data-ui="person"></span><span id="inventoryCount" hidden>0</span></button><button id="mapButton" aria-label="Карта" title="Карта"><span data-ui="map"></span></button><button id="questsButton" aria-label="Квесты" title="Квесты"><span data-ui="quest"></span></button><button id="perksButton" aria-label="Перки" title="Перки"><span data-ui="star"></span></button></nav><button class="icon-btn compact-sound" id="sound" aria-label="Выключить звук" title="Звук"><span id="soundIcon" data-ui="sound"></span><span id="soundState" hidden>on</span></button><nav class="front-game-buttons81" aria-label="Настройки и авторы"><button id="gameSettings81" class="front-icon81" aria-label="Настройки громкости"></button><button id="gameCredits81" class="front-icon81" aria-label="Авторы игры и звуков"></button></nav></section>
+<section class="scene-section" id="sceneSection"><div class="scene-top" id="sceneTop"><span id="sceneLabel" hidden></span></div><button id="warehouseButton" class="warehouse-button" aria-label="Открыть склад" title="Склад" hidden><span data-ui="warehouse"></span></button><div id="dungeonTimer" class="dungeon-timer" hidden></div><canvas id="scene" width="900" height="800" tabindex="0" aria-label="Мрачная локация Зоны"></canvas><div class="scene-shade"></div><video id="weatherRain71" class="weather-rain-video71" muted loop playsinline preload="none" aria-hidden="true" src="assets/weather-v71/rain.webm"></video><div id="weatherFog71" class="weather-fog-layer71" aria-hidden="true"></div><div id="weatherFlash71" class="weather-flash71" aria-hidden="true"></div><img id="weatherBolt71" class="weather-bolt71" alt="" aria-hidden="true" src="assets/weather-v71/lightning.png"><div id="radiationNoise" class="damage-overlay radiation-noise" hidden aria-hidden="true"></div><div id="bleedingVeil" class="damage-overlay bleeding-veil" hidden aria-hidden="true"></div><div id="statusEffects" class="status-effects" aria-label="Активные эффекты"></div><div id="dayPhase" class="day-phase"></div><div id="stormTimer57" class="effect-chip storm-timer57" hidden role="timer" title="До Выброса" aria-label="До Выброса"></div><div id="echoControls" class="echo-touch-controls" hidden aria-label="Управление прицелом"></div><div id="combatAmmo49" class="combat-ammo49" hidden></div><div id="hubLabel62" class="hub-label62" hidden></div><nav id="hubNav62" class="hub-nav62" aria-label="Перемещение в поселении" hidden></nav><div id="sceneHUD" class="scene-hud" hidden></div><div id="sceneHint" class="scene-hint" hidden></div><section id="fieldSupplies" class="field-supplies" hidden aria-label="Расходники на вылазке"></section><div class="scene-caption" id="sceneCaption" hidden><span id="sceneEyebrow"></span><h2 id="sceneTitle"></h2><p id="sceneDesc"></p></div><div class="encounter-tag" id="encounterTag" hidden></div></section>
+<section class="vitals" aria-label="Показатели персонажа"><div class="vital-gauge meter-health" id="healthMeter" role="meter" aria-label="Здоровье" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="meter-face"><svg class="meter-ring" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="meter-health-dashes" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><circle cx="50" cy="50" r="42" fill="none" stroke="white" stroke-width="6" stroke-dasharray="5.27787566 2.96880506"/></mask></defs><g transform="rotate(-90 50 50)" mask="url(#meter-health-dashes)"><circle class="meter-track" cx="50" cy="50" r="42"/><circle class="meter-fill" id="healthFill" cx="50" cy="50" r="42" stroke-dasharray="263.89378290 263.89378290" style="stroke-dashoffset:0"/></g></svg><div class="meter-center"><span class="meter-symbol" data-ui="heart"></span><b id="healthValue">100</b></div></div><span class="meter-caption">Здоровье</span></div><div class="vital-gauge meter-energy" id="energyMeter" role="meter" aria-label="Выносливость" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="meter-face"><svg class="meter-ring" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="meter-energy-dashes" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><circle cx="50" cy="50" r="42" fill="none" stroke="white" stroke-width="6" stroke-dasharray="5.27787566 2.96880506"/></mask></defs><g transform="rotate(-90 50 50)" mask="url(#meter-energy-dashes)"><circle class="meter-track" cx="50" cy="50" r="42"/><circle class="meter-fill" id="energyFill" cx="50" cy="50" r="42" stroke-dasharray="263.89378290 263.89378290" style="stroke-dashoffset:0"/></g></svg><div class="meter-center"><span class="meter-symbol" data-ui="energy"></span><b id="energyLabel">100</b></div></div><span class="meter-caption">Выносливость</span></div><div class="vital-gauge meter-radiation" id="radiationMeter" role="meter" aria-label="Радиация" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="meter-face"><svg class="meter-ring" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="meter-radiation-dashes" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><circle cx="50" cy="50" r="42" fill="none" stroke="white" stroke-width="6" stroke-dasharray="5.27787566 2.96880506"/></mask></defs><g transform="rotate(-90 50 50)" mask="url(#meter-radiation-dashes)"><circle class="meter-track" cx="50" cy="50" r="42"/><circle class="meter-fill" id="radiationFill" cx="50" cy="50" r="42" stroke-dasharray="263.89378290 263.89378290" style="stroke-dashoffset:263.89378290"/></g></svg><div class="meter-center"><span class="meter-symbol" data-ui="radiation"></span><b id="radiationLabel">0</b></div></div><span class="meter-caption">Радиация</span></div><span id="energyHint" hidden></span></section>
+<section id="actionPanel" class="action-panel"></section>
+<section id="activeQuest" class="expedition-quest" hidden aria-live="polite"></section>
+<section id="baseContent" class="content" hidden><div class="section-heading"><h3 id="sectionTitle">Люди кордона</h3><span id="sectionBadge" hidden></span></div><div id="tabContent"></div></section>
+<section id="journalPanel" hidden><p id="journalText"></p></section>
+<nav id="baseNav" class="bottom-nav" aria-label="Главная навигация"></nav>
+<footer id="baseFooter" hidden aria-hidden="true"></footer>
+<video id="weatherDrops71" class="weather-drops71" muted loop playsinline preload="none" aria-hidden="true" src="assets/weather-v71/drops.webm"></video></main>
+<div id="alcoholBlackout" role="alertdialog" aria-modal="true" aria-label="Алкаш!" tabindex="-1" hidden><b>Алкаш!</b></div>
+<div id="toast" class="toast" role="status"></div>
+<div id="levelToast" class="level-toast" role="status" aria-live="polite" hidden></div>
+<div id="modalBackdrop" class="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="closeModal" class="modal-close" aria-label="Закрыть" data-ui="close"></button><div id="modalBody"></div></section></div>
+<section id="front81" class="front81" aria-label="Главное меню СВАЛКЕР">
+ <img id="frontArt81" class="front-art81" src="assets/menu-v81/menu.webp" alt="Одинокий сталкер у заброшенной радиовышки" fetchpriority="high">
+ <video id="frontRain81" class="front-rain81" muted loop autoplay playsinline preload="auto" aria-hidden="true" src="assets/weather-v71/rain.webm"></video>
+ <div id="frontFallbackRain81" class="front-fallback-rain81" aria-hidden="true" hidden></div>
+ <div class="front-shade81" aria-hidden="true"></div><div id="frontFlash81" class="front-flash81" aria-hidden="true"></div>
+ <img id="frontBolt81" class="front-bolt81" src="assets/weather-v71/lightning.png" alt="" aria-hidden="true">
+ <video id="frontDrops81" class="front-rain81 front-drops81" muted loop autoplay playsinline preload="auto" aria-hidden="true" src="assets/weather-v71/drops.webm"></video>
+ <div id="frontAfter81" class="front-after81" aria-hidden="true"></div>
+ <nav class="front-tools81" aria-label="Настройки и авторы"><button id="frontSettings81" class="front-icon81" aria-label="Настройки громкости" title="Настройки"></button><button id="frontCredits81" class="front-icon81" aria-label="Авторы игры и звуков" title="Авторы"></button></nav>
+ <div class="front-brand81"><p class="front-kicker81">ЗОНА ЖДЁТ</p><h1>СВАЛКЕР</h1><span class="front-line81" aria-hidden="true"></span></div>
+ <span class="front-version84">Alfa 0.85</span>
+ <div class="front-bottom81"><button id="frontPlay81" class="front-play81">ИГРАТЬ<span aria-hidden="true">▸</span></button><p id="frontAudioHint81" class="front-audio-hint81"></p></div>
+</section>
+<div id="frontSheetBack81" class="front-sheet-back81" hidden><section class="front-sheet81" role="dialog" aria-modal="true" aria-label="Настройки и авторы"><button id="frontSheetClose81" class="front-sheet-close81" aria-label="Закрыть">×</button>
+ <div id="frontSettingsPanel81"><h2>НАСТРОЙКИ</h2>
+  <label class="front-volume81" for="range-master81">Общая громкость<output id="volume-master81" for="range-master81">100%</output><input id="range-master81" type="range" min="0" max="100" step="1" value="100" data-volume81="master"></label>
+  <label class="front-volume81" for="range-music81">Музыка<output id="volume-music81" for="range-music81">100%</output><input id="range-music81" type="range" min="0" max="100" step="1" value="100" data-volume81="music"></label>
+  <label class="front-volume81" for="range-ambient81">Эмбиент и погода<output id="volume-ambient81" for="range-ambient81">100%</output><input id="range-ambient81" type="range" min="0" max="100" step="1" value="100" data-volume81="ambient"></label>
+  <label class="front-volume81" for="range-sfx81">Звуковые эффекты<output id="volume-sfx81" for="range-sfx81">100%</output><input id="range-sfx81" type="range" min="0" max="100" step="1" value="100" data-volume81="sfx"></label>
+  <label class="front-toggle81" for="frontMute81">Выключить весь звук<input id="frontMute81" type="checkbox"></label>
+  <label class="front-toggle81" for="frontLightning81">Вспышки молнии в меню<input id="frontLightning81" type="checkbox" checked></label>
+  <p class="front-note81">Громкость сохраняется автоматически.</p>
+ </div>
+ <div id="frontCreditsPanel81" hidden><h2>АВТОРЫ</h2><h3>СВАЛКЕР</h3><p><b>KASHARA / MikiaWello</b> — автор игры, идея, игровой мир, подбор музыки и звуков.<br><b>ChatGPT</b> — программирование, игровые механики и создание графики совместно с автором.</p>
+  <h3>Музыка первой локации и меню</h3><p>«Безмолвные стены», «Сломанные системы», «Эпидемический пульс» — Александр Сухов и AI / Zvukogram.com. Использованы файлы, предоставленные автором игры.</p>
+  <h3>Звуки и другая музыка</h3><p>Kenney, AntumDeluge, TinyWorlds, Tabasco, bart, bonebrah, Brandon Morris (HaelDB), SpringySpringo, qubodup, Mike Koenig, Daniel Simon, Bogart VGM, ArcadeParty и авторы, перечисленные в полных титрах.</p>
+  <p><a id="frontFullCredits81" href="assets/menu-v81/CREDITS.txt">Все авторы, источники и лицензии</a></p><pre id="frontFullCreditsText81" class="front-credits-text81" hidden></pre>
+ </div>
+</section></div>
+
+<script src="icons.js?v=77-72"></script>
+<script src="audio.js?v=81"></script>
+<script src="menu-v81.js?v=81"></script>
+<script src="patch.js?v=82"></script>
+<script src="events.js?v=78-72"></script>
+<script src="progression.js?v=82"></script>
+<script src="anomaly.js?v=72"></script>
+<script src="motion.js?v=62"></script>
+<script src="raider-v48.js?v=48"></script>
+<script src="combat-v48.js?v=50"></script>
+<script src="rare-events.js?v=78-72"></script>
+<script src="events-v47.js?v=70"></script>
+<script src="enemies.js?v=72"></script>
+<script src="interface-v29.js?v=62"></script>
+<script src="interface-v32.js?v=79-70"></script>
+<script src="feedback-v33.js?v=39"></script>
+<script src="avatar-v38.js?v=72"></script>
+<script src="route-end-v39.js?v=39"></script>
+<script src="economy-v51.js?v=51"></script>
+<script src="emission-v52.js?v=61"></script>
+<script src="loners-v53.js?v=53"></script>
+<script src="emission-v56.js?v=60"></script>
+<script src="locations-v62-data.js?v=66"></script>
+<script src="locations-v62.js?v=82"></script>
+<script src="progression-v72-data.js?v=72"></script><script src="progression-v72.js?v=82"></script><script src="refresh-v77.js?v=78-77"></script><script src="upgrades-v78.js?v=82"></script><script src="item-info-v79.js?v=82"></script><script src="settlement-v82.js?v=82"></script><script src="game.js?v=82"></script><script src="weather-v71.js?v=74"></script>
+<script src="boss-sprites.js?v=46"></script>
+<script src="radio-echo.js?v=51"></script>
+<script src="radio-echo-v45.js?v=51"></script>
+<script src="alcohol-v44.js?v=45"></script>
+<!-- APK updater disabled in browser testing version -->
+</body></html>

@@ -1,0 +1,114 @@
+[
+  {
+    "file": "rat-voice.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 83790,
+    "duration_s": 3.8,
+    "peak": 0.649994,
+    "rms": 0.208901,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 167624
+  },
+  {
+    "file": "rat-attack.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 17640,
+    "duration_s": 0.8,
+    "peak": 0.649994,
+    "rms": 0.224974,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 35324
+  },
+  {
+    "file": "rat-down.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 22270,
+    "duration_s": 1.00998,
+    "peak": 0.649994,
+    "rms": 0.214747,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 44584
+  },
+  {
+    "file": "bum-babble-1.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 67249,
+    "duration_s": 3.04984,
+    "peak": 0.649994,
+    "rms": 0.08304,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 134542
+  },
+  {
+    "file": "bum-babble-2.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 71881,
+    "duration_s": 3.25991,
+    "peak": 0.649994,
+    "rms": 0.088483,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 143806
+  },
+  {
+    "file": "bum-attack.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 14994,
+    "duration_s": 0.68,
+    "peak": 0.649994,
+    "rms": 0.083578,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 30032
+  },
+  {
+    "file": "bum-down.wav",
+    "format": "PCM16",
+    "channels": 1,
+    "sample_rate": 22050,
+    "frames": 25357,
+    "duration_s": 1.14998,
+    "peak": 0.649994,
+    "rms": 0.084646,
+    "finite": true,
+    "first_last_samples": [
+      0,
+      0
+    ],
+    "bytes": 50758
+  }
+]

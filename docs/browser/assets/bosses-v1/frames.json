@@ -1,0 +1,135 @@
+{
+  "radio-echo": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        44,
+        17,
+        851,
+        851
+      ],
+      [
+        922,
+        431,
+        825,
+        438
+      ]
+    ],
+    "transparentFraction": 0.655
+  },
+  "rusty-maw": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        28,
+        39,
+        862,
+        799
+      ],
+      [
+        889,
+        342,
+        878,
+        485
+      ]
+    ],
+    "transparentFraction": 0.534
+  },
+  "swamp-guardian": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        18,
+        26,
+        889,
+        850
+      ],
+      [
+        925,
+        375,
+        830,
+        487
+      ]
+    ],
+    "transparentFraction": 0.581
+  },
+  "watcher": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        18,
+        53,
+        859,
+        783
+      ],
+      [
+        896,
+        346,
+        865,
+        486
+      ]
+    ],
+    "transparentFraction": 0.557
+  },
+  "radio-echo-biomech-v2": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        56,
+        74,
+        785,
+        777
+      ],
+      [
+        976,
+        378,
+        724,
+        457
+      ]
+    ],
+    "transparentFraction": 0.723
+  },
+  "radio-echo-tower-v3": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        60,
+        15,
+        749,
+        848
+      ],
+      [
+        953,
+        334,
+        773,
+        533
+      ]
+    ],
+    "transparentFraction": 0.718
+  },
+  "radio-echo-tower-v4-broken": {
+    "width": 1774,
+    "height": 887,
+    "frames": [
+      [
+        60,
+        10,
+        750,
+        855
+      ],
+      [
+        952,
+        333,
+        776,
+        537
+      ]
+    ],
+    "transparentFraction": 0.709
+  }
+}

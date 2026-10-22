@@ -1,0 +1,36 @@
+[
+  {
+    "file": "campfire.wav",
+    "duration": 16.0,
+    "peak": 0.68,
+    "peak_dBFS": -3.35,
+    "channels": 1,
+    "sample_rate": 44100,
+    "encoding": "PCM 16-bit",
+    "bytes": 1411244,
+    "title": "Fireplace Sound loop",
+    "author": "PagDev",
+    "source_url": "https://opengameart.org/content/fireplace-sound-loop",
+    "download_url": "https://opengameart.org/sites/default/files/fire.wav",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transformations": "Recorded wood-burning fireplace; cropped seconds 2–19, one-second equal-power crossfade yields 16-second seamless loop; downmixed mono, PCM16 44.1 kHz, peak normalized to −3.35 dBFS."
+  },
+  {
+    "file": "water.wav",
+    "duration": 3.4,
+    "peak": 0.68,
+    "peak_dBFS": -3.35,
+    "channels": 1,
+    "sample_rate": 44100,
+    "encoding": "PCM 16-bit",
+    "bytes": 299924,
+    "title": "Waterflow Sound",
+    "author": "TyberiusGames",
+    "source_url": "https://opengameart.org/content/waterflow-sound",
+    "download_url": "https://opengameart.org/sites/default/files/waterflow.mp3",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transformations": "Self-recorded running water; cropped seconds 0.4–3.8, 40 ms fades at edges; downmixed mono, PCM16 44.1 kHz, peak normalized to −3.35 dBFS."
+  }
+]
