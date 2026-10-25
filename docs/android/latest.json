@@ -1,0 +1,16 @@
+{
+  "version": "0.90",
+  "versionCode": 91,
+  "releasePageUrl": "https://github.com/mikiawelloo/svalker-updates/releases/tag/v0.90",
+  "apkUrl": "https://github.com/mikiawelloo/svalker-updates/releases/download/v0.90/SVALKER-Alfa-0.90.apk",
+  "apkSizeBytes": 260742268,
+  "sha256": "be0d675993f280e2ba723657c64f77f2adf8daee9df3a93404875ef5dabd3a5a",
+  "notes": [
+    "Крафт снаряжения II уровня дешевле на 50%.",
+    "Все услуги медика дешевле на 75%.",
+    "Базовый переносимый вес — 20 кг.",
+    "Региональные ящики, лабораторный контейнер и мимики.",
+    "Новые фоны встреч и исправления спрайтов.",
+    "Оптимизация отрисовки и сохранение старого прогресса."
+  ]
+}
